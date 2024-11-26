@@ -25,7 +25,7 @@ avatarURL = "images/profile.jpg"
 images = ["images/og_cover.png"]
 description = "Passionate about networks :satellite:, music :guitar:, coding :desktop_computer:, travelling :airplane: and hiking :mountain:"
 keywords = "blog,developer,personal,software,python,networks"
-info = "R&D Engineer"
+# info = " I do love networks :satellite:, music :guitar:, coding :desktop_computer:, travelling :airplane: and hiking :mountain:"
 
 dateFormat = "2006-01-02"
 
@@ -43,11 +43,17 @@ icon = "fa-brands fa-github fa-2x"
 weight = 1
 url = "https://github.com/sergio-gimenez/"
 
+# [[params.social]]
+# name = "Bluesky"
+# icon = "fa-brands fa-bluesky fa-2x"
+# weight = 2
+# url = "https://bsky.app/profile/sergio-gimenez.bsky.social"
+
 [[params.social]]
-name = "Bluesky"
-icon = "fa-brands fa-bluesky fa-2x"
+name = "Twitter"
+icon = "fa-brands fa-twitter fa-2x"
 weight = 2
-url = "https://bsky.app/profile/sergio-gimenez.bsky.social"
+url = "https://x.com/sergiogimenez6"
 
 [[params.social]]
 name = "Mastodon"
@@ -56,16 +62,23 @@ weight = 3
 url = "https://mastodon.social/@sergiogimenez"
 
 [[params.social]]
-name = "LinkedIn"
-icon = "fa-brands fa-linkedin fa-2x"
-weight = 4
-url = "https://www.linkedin.com/in/sergio-gimenez-anton/"
+name = "Google Scholar"
+icon = "fa-brands fa-google-scholar fa-2x"
+weight = 3
+url = "https://scholar.google.es/citations?user=o9sbhDUAAAAJ"
 
-[[params.social]]
-name = "RSS"
-icon = "fa fa-rss-square fa-2x"
-weight = 5
-url = "/posts/index.xml"
+
+# [[params.social]]
+# name = "LinkedIn"
+# icon = "fa-brands fa-linkedin fa-2x"
+# weight = 4
+# url = "https://www.linkedin.com/in/sergio-gimenez-anton/"
+
+# [[params.social]]
+# name = "RSS"
+# icon = "fa fa-rss-square fa-2x"
+# weight = 5
+# url = "/posts/index.xml"
 
 [[menu.main]]
 name = "Now"
@@ -75,7 +88,7 @@ url = "now/"
 [[menu.main]]
 name = "Blog"
 weight = 2
-url = "posts/"
+url = "blog/"
 
 [[menu.main]]
 name = "About"
