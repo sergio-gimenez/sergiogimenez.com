@@ -37,6 +37,10 @@ hideColorSchemeToggle = false
 [params.goatCounter]
 code = "sergiogimenez"
 
+[params.plausibleAnalytics]
+domain = "6grupa.com"
+serverURL = "https://plausible.sergiogimenez.com"
+
 [[params.social]]
 name = "Github"
 icon = "fa-brands fa-github fa-2x"
