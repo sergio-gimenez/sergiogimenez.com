@@ -43,7 +43,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: true
           fetch-depth: 0
       - name: Setup Pages
         id: pages
@@ -54,7 +54,7 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          TZ: Eurpe/Madrid
+          TZ: Europe/Madrid
         run: |
           hugo \
             --gc \
