@@ -38,7 +38,7 @@ hideColorSchemeToggle = false
 code = "sergiogimenez"
 
 [params.plausibleAnalytics]
-domain = "6grupa.com"
+domain = "sergiogimenez.com"
 serverURL = "https://plausible.sergiogimenez.com"
 
 [[params.social]]
