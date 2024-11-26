@@ -39,7 +39,7 @@ code = "sergiogimenez"
 
 [params.plausibleAnalytics]
 domain = "sergiogimenez.com"
-serverURL = "https://plausible.sergiogimenez.com/js/script.js"
+serverURL = "plausible.sergiogimenez.com"
 
 [[params.social]]
 name = "Github"
