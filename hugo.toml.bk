@@ -1,0 +1,100 @@
+title = "Sergio Giménez Antón"
+theme = "coder"
+
+languageCode = "en"
+defaultContentLanguage = "en"
+
+paginate = 20
+canonifyURLs = true
+
+enableEmoji = true
+enableGitInfo = true
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+
+[markup.highlight]
+style = "github-dark"
+tabWidth = 4
+
+[params]
+author = "Sergio Giménez Antón"
+avatarURL = "images/profile.jpg"
+images = ["images/og_cover.png"]
+description = "Passionate about networks :satellite:, music :guitar:, coding :desktop_computer:, travelling :airplane: and hiking :mountain:"
+keywords = "blog,developer,personal,software,python,networks"
+# info = " I do love networks :satellite:, music :guitar:, coding :desktop_computer:, travelling :airplane: and hiking :mountain:"
+
+dateFormat = "2006-01-02"
+
+colorScheme = "dark"
+hideColorSchemeToggle = false
+
+# customSCSS = ["scss/custom.scss"]
+
+[params.goatCounter]
+code = "sergiogimenez"
+
+[params.plausibleAnalytics]
+domain = "sergiogimenez.com"
+serverURL = "plausible.sergiogimenez.com"
+
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/sergio-gimenez/"
+
+# [[params.social]]
+# name = "Bluesky"
+# icon = "fa-brands fa-bluesky fa-2x"
+# weight = 2
+# url = "https://bsky.app/profile/sergio-gimenez.bsky.social"
+
+[[params.social]]
+name = "Twitter"
+icon = "fa-brands fa-twitter fa-2x"
+weight = 2
+url = "https://x.com/sergiogimenez6"
+
+[[params.social]]
+name = "Mastodon"
+icon = "fa-brands fa-mastodon fa-2x"
+weight = 3
+url = "https://mastodon.social/@sergiogimenez"
+
+[[params.social]]
+name = "Google Scholar"
+icon = "fa-brands fa-google-scholar fa-2x"
+weight = 3
+url = "https://scholar.google.es/citations?user=o9sbhDUAAAAJ"
+
+
+# [[params.social]]
+# name = "LinkedIn"
+# icon = "fa-brands fa-linkedin fa-2x"
+# weight = 4
+# url = "https://www.linkedin.com/in/sergio-gimenez-anton/"
+
+# [[params.social]]
+# name = "RSS"
+# icon = "fa fa-rss-square fa-2x"
+# weight = 5
+# url = "/posts/index.xml"
+
+[[menu.main]]
+name = "Now"
+weight = 1
+url = "now/"
+
+[[menu.main]]
+name = "Blog"
+weight = 2
+url = "blog/"
+
+[[menu.main]]
+name = "About"
+weight = 3
+url = "about/"
