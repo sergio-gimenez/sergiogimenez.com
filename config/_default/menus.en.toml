@@ -30,22 +30,49 @@ name = "Projects"
 pageRef = "projects"
 weight = 40
 
-[[main]]
-  pre = "github"
-  name = "GitHub"
-  url = "https://github.com/nunocoracao/blowfish"
-  weight = 30
+# [[main]]
+#   name = "side-projects"
+#   parent = "Projects"
+#   pageRef = "samples"
+#   weight = 20
+
+# [[main]]
+#   name = "pet-projects"
+#   parent = "Projects"
+#   pageRef = "pet-projects"
+#   weight = 20
 
 [[main]]
-  identifier = "github2"
-  pre = "github"
-  url = "https://github.com/nunocoracao/blowfish"
-  weight = 40
+name = "Research"
+pageRef = "research"
+weight = 40
+
+[[main]]
+name = "Resume"
+pageRef = "cv"
+weight = 50
+
+[[main]]
+  name = "Academic"
+  parent = "Resume"
+  pageRef = "samples"
+  weight = 20
+
+[[main]]
+  name = "Europass"
+  parent = "Resume"
+  pageRef = "samples"
+  weight = 20
+
+
+[[main]]
+name = "Contact"
+pageRef = "contact"
+weight = 60
 
 [[footer]]
   name = "Privacy"
   url = "https://external-link"
-
 
 #[[main]]
 #  name = "example sub-menu 1"
