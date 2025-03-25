@@ -4,7 +4,6 @@ date: 2020-01-27
 draft: false
 tags: ["machine learning", "kaggle", "xgboost", "classification"]
 categories: ["machine learning"]
-# info: Solving a Kaggle ML classification problem using XGBoost. A hands on approach on solving a supervised anomaly detection problem
 ---
 
 This post is about my first ever participation in a kaggle competition. The competition was organized by the Machine Learning techers of the MSc course I'm currently doing. To be honest, I had no idea about how to get through this kind of competition, but since it was a mandatory assignment and I had to do it, me and [my colleague](https://www.linkedin.com/in/gerard-castell-049a5912a/) really spent a lot of time trying to get the best possible score. All the details about the classification problem can be found [in
@@ -18,7 +17,7 @@ This post is not intended to show a rigurous and very formal approach of the pro
 Below, there is a summary of the whole pipeline. On the next blocks, we
 will dive deeply in all the modules shown.
 
-![Summary pipeline breakdown](/assets/images/kaggle_ml/competition_pipelin.png)
+![Summary pipeline breakdown](./img/competition_pipelin.png)
 
 # Pre-Processing
 
@@ -164,7 +163,7 @@ ax.scatter(X_reduce[:,0], X_reduce[:, 1], X_reduce[:, 2], s=4, alpha=1,color=col
 plt.show()
 ```
 
-![Normalized PCA reduction to 3 features of the whole dataset](/assets/images/kaggle_ml/pca_pre_ps.png)
+![Normalized PCA reduction to 3 features of the whole dataset](./img/pca_pre_ps.png)
 
 ### t-SNE
 
@@ -198,7 +197,7 @@ sns.scatterplot(
 )
 ```
 
-![Normalized t-SNE reduction in 2 dimension of the whole dataset](/assets/images/kaggle_ml/tsne.png)
+![Normalized t-SNE reduction in 2 dimension of the whole dataset](./img/tsne.png)
 
 ## Plain Vanilla Classifiers
 
@@ -476,7 +475,7 @@ This plot shows the improvement we gained by implementing the '`Feature Selectio
   plt.show()
 ```
 
-![Loss vs threshold selection on feature reduction](/assets/images/kaggle_ml/error_vs_threshold.png)
+![Loss vs threshold selection on feature reduction](./img/error_vs_threshold.png)
 
 #### Best performance feature reduction
 
@@ -492,7 +491,7 @@ Our best feature reduction has 3 features , so then we can plot the resulting da
   plt.show()
 ```
 
-![Best-Performance Feature Reduction](/assets/images/kaggle_ml/feature_reduction.png)
+![Best-Performance Feature Reduction](./img/feature_reduction.png)
 
 
 #### Feature importance
@@ -511,7 +510,7 @@ In this plot, is shown the features that are more relevant to `XGBoost` when it 
   plt.show()
 ```
 
-![Feature Importance](/assets/images/kaggle_ml/feature_importances.png)
+![Feature Importance](./img/feature_importances.png)
 
 # Conclusions
 

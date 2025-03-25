@@ -65,10 +65,16 @@ weight = 50
   weight = 20
 
 
+# [[main]]
+# name = "Contact"
+# pageRef = "contact"
+# weight = 60
+
 [[main]]
-name = "Contact"
-pageRef = "contact"
-weight = 60
+  name = ""
+  pre = "email"
+  url = "mailto:hi@sergiogimenez.com"
+  weight = 60
 
 [[footer]]
   name = "Privacy"
@@ -91,7 +97,7 @@ weight = 60
 #  pageRef = "tags/interesting-topic"
 #  weight = 10
 
-#[[subnavigation]]
+# [[subnavigation]]
 #  name = "My Awesome Category"
 #  pre = "github"
 #  pageRef = "categories/awesome"
