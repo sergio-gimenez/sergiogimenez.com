@@ -1,0 +1,7 @@
+[hugoVersion]
+extended = false
+min = "0.87.0"
+
+[module]
+[[module.imports]]
+path = "github.com/divinerites/plausible-hugo"
