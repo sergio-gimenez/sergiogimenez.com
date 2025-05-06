@@ -35,6 +35,11 @@ enableEmoji = true
   filename = 'sitemap.xml'
   priority = 0.5
 
+[params.plausible]
+  enable = true
+  domain = "sergiogimenez.com"
+
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
