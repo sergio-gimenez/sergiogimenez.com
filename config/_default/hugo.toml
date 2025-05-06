@@ -37,7 +37,7 @@ enableEmoji = true
 
 [params.plausible]
   enable = true
-  domain = "sergiogimenez.com"
+  domain = "plausible.sergiogimenez.com"
 
 
 [outputs]
