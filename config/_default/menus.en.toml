@@ -55,13 +55,13 @@ weight = 50
 [[main]]
   name = "Academic"
   parent = "Resume"
-  pageRef = "samples"
+  url = "/downloads/academic_cv.pdf"
   weight = 20
 
 [[main]]
   name = "Europass"
   parent = "Resume"
-  pageRef = "samples"
+  url = "/downloads/europass_cv.pdf"
   weight = 20
 
 

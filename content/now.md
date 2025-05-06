@@ -1,8 +1,25 @@
-+++
-date = "2024-09-22"
-title = "What I'm doing now?"
-slug = "now"
-+++
+---
+showDate : true
+showAuthor : false
+showDateOnlyInArticle : false
+showDateUpdated : false
+showHeadingAnchors : false
+showPagination : false
+showReadingTime : false
+showTableOfContents : true
+showTaxonomies : false 
+showWordCount : false
+showSummary : false
+sharingLinks : false
+showEdit: false
+showViews: false
+showLikes: false
+layoutBackgroundHeaderSpace: false
+
+title: "What am I doing now?"
+date: "2024-09-22"
+slug: "now"
+---
 
 _Last updated at {{< lastmod >}}._
 

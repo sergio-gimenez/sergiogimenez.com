@@ -1,8 +1,20 @@
-+++
-date = "2018-09-26"
-title = "About me"
-slug = "about"
-+++
+---
+showDate : false
+showTableOfContents : false
+showDateOnlyInArticle : false
+showDateUpdated : false
+showHeadingAnchors : false
+showPagination : false
+showReadingTime : false
+showTaxonomies : false 
+showWordCount : false
+showSummary : false
+sharingLinks : false
+showEdit: false
+showViews: false
+showLikes: false
+layoutBackgroundHeaderSpace: false
+---
 
 My name is Sergio Giménez, I'm from Barcelona. However, currently I live between Barcelona and Teruel, a beautiful small city located in the so called "empty spain".
 
