@@ -8,3 +8,6 @@
 	path = themes/blowfish
 	url = https://github.com/nunocoracao/blowfish.git
 	branch = main
+[submodule "themes/plausible-hugo"]
+	path = themes/plausible-hugo
+	url = https://github.com/divinerites/plausible-hugo.git
