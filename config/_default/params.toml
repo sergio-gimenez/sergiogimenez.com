@@ -6,13 +6,12 @@
 # https://blowfish.page/docs/configuration/#theme-parameters
 
 [plausible]
-  domain = "sergiogimenez.com" # **Required:** Replace with your website's domain registered in Plausible
-  plausible_domain = "plausible.sergiogimenez.com"  # Change if self-hosting Plausible
-  # script_name = "script.js"          # Change if using a custom script name from Plausible
-  local = true                      # Set to true to track during 'hugo server'
-  track_file_downloads = true       # Set to true to enable file download tracking
-  track_outbound_links = true       # Set to true to enable outbound link tracking
-  debug=true
+  domain = "sergiogimenez.com"
+  plausible_domain = "plausible.sergiogimenez.com"
+  local = true
+  track_file_downloads = true
+  track_outbound_links = true
+  debug=false
   enable=true
 
 colorScheme = "noir"

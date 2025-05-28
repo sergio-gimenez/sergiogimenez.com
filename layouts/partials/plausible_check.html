@@ -1,44 +1,36 @@
-{{/* layouts/partials/plausible_check.html (override for debugging) */}}
+{{/* layouts/partials/plausible_check.html (clean, no warnings) */}}
 {{ $pParams := site.Params.plausible }}
 {{ $domainFromParams := "" }}
 {{ $isDomainSet := false }}
 {{ $isPlausibleParamsSet := false }}
 
 {{ if $pParams }}
-  {{ $isPlausibleParamsSet = true }}
-  {{ if isset $pParams "domain" }}
-    {{ $isDomainSet = true }}
-    {{ $domainFromParams = $pParams.domain }}
-  {{ end }}
+{{ $isPlausibleParamsSet = true }}
+{{ if isset $pParams "domain" }}
+{{ $isDomainSet = true }}
+{{ $domainFromParams = $pParams.domain }}
 {{ end }}
-
-{{ warnf "[PLAU OVERRIDE] Is site.Params.plausible table set? %t" $isPlausibleParamsSet }}
-{{ warnf "[PLAU OVERRIDE] Is 'domain' key set in site.Params.plausible? %t" $isDomainSet }}
-{{ warnf "[PLAU OVERRIDE] Value of site.Params.plausible.domain: '%s'" $domainFromParams }}
+{{ end }}
 
 {{ if not (and $isDomainSet (ne $domainFromParams "")) }}
-  {{ errorf "[PLAU OVERRIDE] CRITICAL: site.Params.plausible.domain is NOT effectively set or is an empty string. Please check config/_default/params.toml." }}
+{{ errorf
+"[PLAU OVERRIDE] CRITICAL: site.Params.plausible.domain is NOT effectively set or is an empty string. Please check config/_default/params.toml."
+}}
 {{ end }}
 
-{{/* If the above didn't error, $domainFromParams is good to use */}}
 {{ $domain := $domainFromParams }}
 
-{{/* Replicate original logic for other variables, using defaults if necessary */}}
 {{ $scriptNameDefault := "script.js" }}
 {{ $scriptName := $scriptNameDefault }}
 {{ $plausibleDomainDefault := "plausible.io" }}
 {{ $plausibleDomain := $plausibleDomainDefault }}
 
 {{ if $pParams }}
-  {{ $plausibleDomain = $pParams.plausible_domain | default $plausibleDomainDefault }}
-  {{ $scriptName = $pParams.script_name | default $scriptNameDefault }}
+{{ $plausibleDomain = $pParams.plausible_domain | default
+$plausibleDomainDefault }}
+{{ $scriptName = $pParams.script_name | default $scriptNameDefault }}
 {{ end }}
 
-{{/* Set values for other partials to use */}}
 {{ .Page.Scratch.Set "plausible_domain" $plausibleDomain }}
 {{ .Page.Scratch.Set "script_name" $scriptName }}
 {{ .Page.Scratch.Set "domain" $domain }}
-
-{{ warnf "[PLAU OVERRIDE] Effective domain for Plausible: '%s'" $domain }}
-{{ warnf "[PLAU OVERRIDE] Effective Plausible API domain: '%s'" $plausibleDomain }}
-{{ warnf "[PLAU OVERRIDE] Effective script name: '%s'" $scriptName }}

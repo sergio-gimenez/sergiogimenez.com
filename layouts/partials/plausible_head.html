@@ -1,90 +1,32 @@
-{{ warnf "[PLAU HEAD OVERRIDE] DEBUG: Entered plausible_head.html override." }}
-
-{{/* This will call your existing plausible_check.html override */}}
 {{- partial "plausible_check.html" . -}}
 
 {{- $domainFromScratch := .Page.Scratch.Get "domain" -}}
-{{ warnf "[PLAU HEAD OVERRIDE] DEBUG: Domain from Scratch after check: '%s'"
-$domainFromScratch }}
 
 {{- $enablePlausible := true -}}
 {{- if isset site.Params.plausible "enable" -}}
 {{- $enablePlausible = site.Params.plausible.enable -}}
 {{- end -}}
-{{ warnf "[PLAU HEAD OVERRIDE] DEBUG: $enablePlausible = %t" $enablePlausible }}
 
 {{- $enableLocalTracking := false -}}
 {{- if isset site.Params.plausible "local" -}}
 {{- $enableLocalTracking = site.Params.plausible.local -}}
 {{- end -}}
-{{ warnf "[PLAU HEAD OVERRIDE] DEBUG: $enableLocalTracking = %t"
-$enableLocalTracking }}
 
 {{- $moduleDebugFlag := false -}}
 {{- if isset site.Params.plausible "debug" -}}
 {{- $moduleDebugFlag = site.Params.plausible.debug -}}
 {{- end -}}
-{{ warnf
-"[PLAU HEAD OVERRIDE] DEBUG: $moduleDebugFlag (from site.Params.plausible.debug) = %t"
-$moduleDebugFlag }}
 
 {{- if $moduleDebugFlag -}}
 {{- .Page.Scratch.Set "plausible_debug" true -}}
 {{- end -}}
 
 {{- $isProduction := hugo.IsProduction -}}
-{{ warnf "[PLAU HEAD OVERRIDE] DEBUG: $isProduction (hugo.IsProduction) = %t"
-$isProduction }}
 
 {{- if $enablePlausible }}
-{{ warnf "[PLAU HEAD OVERRIDE] DEBUG: Condition 1 ($enablePlausible) is MET." }}
-{{- if or $isProduction $enableLocalTracking -}}
-{{ warnf
-"[PLAU HEAD OVERRIDE] DEBUG: Condition 2 (or $isProduction $enableLocalTracking) is MET."
-}}
-{{- if $domainFromScratch -}}
-{{ warnf
-"[PLAU HEAD OVERRIDE] DEBUG: Condition 3 ($domainFromScratch is set: '%s') is MET. Attempting to call plausible_js.html."
-$domainFromScratch }}
-
-{{- partial "plausible_js.html" . -}} {{/* This is from the module */}}
-{{ warnf "[PLAU HEAD OVERRIDE] DEBUG: Called plausible_js.html." }}
-
-{{/* For now, let's keep CSP and public URL partials commented to ensure they
-are not the issue */}}
-{{/* {{- partial "plausible_head_csp.html" . -}} */}}
-{{/* warnf "[PLAU HEAD OVERRIDE] DEBUG: Called plausible_head_csp.html." */}}
-{{/* {{- partial "plausible_head_public_url.html" . -}} */}}
-{{/* warnf "[PLAU HEAD OVERRIDE] DEBUG: Called plausible_head_public_url.html."
-*/}}
-
-{{- else -}}
-{{ warnf
-"[PLAU HEAD OVERRIDE] DEBUG: Condition 3 ($domainFromScratch) NOT MET. Plausible domain from scratch was empty or not set: '%s'"
-$domainFromScratch }}
-{{- if $moduleDebugFlag }}
-{{- warnf
-"[PLAU HEAD OVERRIDE] OFFICIAL MODULE DEBUG: No Plausible script because domain is not set after plausible_check.html. Value: '%s'"
-$domainFromScratch -}}
+  {{- if or $isProduction $enableLocalTracking -}}
+    {{- if $domainFromScratch -}}
+      {{- partial "plausible_js.html" . -}}
+    {{- end -}}
+  {{- end -}}
 {{- end -}}
-{{- end -}}
-{{- else -}}
-{{ warnf
-"[PLAU HEAD OVERRIDE] DEBUG: Condition 2 (or $isProduction $enableLocalTracking) NOT MET."
-}}
-{{- if $moduleDebugFlag }}
-{{- warnf
-"[PLAU HEAD OVERRIDE] OFFICIAL MODULE DEBUG: No Plausible script because not in production AND local tracking is not enabled."
--}}
-{{- end -}}
-{{- end -}}
-{{- else -}}
-{{ warnf "[PLAU HEAD OVERRIDE] DEBUG: Condition 1 ($enablePlausible) NOT MET."
-}}
-{{- if $moduleDebugFlag }}
-{{- warnf
-"[PLAU HEAD OVERRIDE] OFFICIAL MODULE DEBUG: No Plausible script because Plausible is not enabled (site.Params.plausible.enable is false)."
--}}
-{{- end -}}
-{{- end -}}
-{{ warnf "[PLAU HEAD OVERRIDE] DEBUG: Exiting plausible_head.html override." }}

@@ -1,28 +1,13 @@
-{{ warnf "[PLAU JS OVERRIDE] DEBUG: Entered plausible_js.html override." }}
-
 {{- $domain := .Page.Scratch.Get "domain" -}}
 {{- $plausible_domain := .Page.Scratch.Get "plausible_domain" -}}
 {{- $script_name := .Page.Scratch.Get "script_name" -}}
 {{- $proxy_netlify := site.Params.plausible.proxy_netlify | default false -}}
 
-{{ warnf "[PLAU JS OVERRIDE] DEBUG: Domain from Scratch: '%s'" $domain }}
-{{ warnf "[PLAU JS OVERRIDE] DEBUG: Plausible Domain from Scratch: '%s'"
-$plausible_domain }}
-{{ warnf "[PLAU JS OVERRIDE] DEBUG: Script Name from Scratch: '%s'" $script_name
-}}
-{{ warnf "[PLAU JS OVERRIDE] DEBUG: Proxy Netlify from Params: %t"
-$proxy_netlify }}
-
 {{- $self_host_js := "" -}}
 {{- if $proxy_netlify -}}
-{{- $self_host_js = printf "/js/%s" $script_name | absURL -}}
+  {{- $self_host_js = printf "/js/%s" $script_name | absURL -}}
 {{- else -}}
-{{- $self_host_js = printf "https://%s/js/%s" $plausible_domain $script_name -}}
+  {{- $self_host_js = printf "https://%s/js/%s" $plausible_domain $script_name -}}
 {{- end -}}
-{{ warnf "[PLAU JS OVERRIDE] DEBUG: Calculated script src (self_host_js): '%s'"
-$self_host_js }}
 
 <script defer data-domain="{{ $domain }}" src="{{ $self_host_js }}"></script>
-{{ warnf
-"[PLAU JS OVERRIDE] DEBUG: Exiting plausible_js.html override (script tag should have been output)."
-}}
