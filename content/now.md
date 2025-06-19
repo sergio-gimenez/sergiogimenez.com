@@ -24,10 +24,13 @@ slug: "now"
 _Last updated at {{< lastmod >}}._
 
 - Pursuing a PhD for building more efficient and green future mobile networks: [:six: 6G-RUPA](https://6grupa.com)
-- Building a community network within Hahatay in Senegal: [:senegal: hahatay.network](https://hahatay.network)
-- Working as a R&D Engineer at i2cat 🤓
-- Contributing to [eReuse.org](https://ereuse.org) :recycle:
-- Recently started to learn to climb :climbing: and making my own wine :wine_glass:
+  - I've got a scholarship for a research stay at Boston University. So I'll be in Boston from September to December 2025!
+- I'm the president of a very cool students organization at UPC: [AUCOOP](https://aucoop.upc.edu)
+- Maintaining a community network within [Hahatay](https://hahatay.org) in Senegal: [:senegal: hahatay.network](https://hahatay.network)
+- Starting a project to provide connectivity in a rural school in [Namibia :namibia:](https://foundawtion.org/archivos/5383)
+- Working as a R&D Engineer at [i2CAT](https://i2cat.net) 🤓
+- Contributing to [eReuse.org](https://ereuse.org) :recycle: project
+- Getting into climbing :climbing: and learning to make my own wine :wine_glass:
 
 ---
 
