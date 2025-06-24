@@ -1,14 +1,15 @@
 ---
 title: "Hahatay Network Prize in IEEE CUNC Challenge 2024"
 date: 2024-11-28T14:45:00Z
+authors: 
+  - "sergio-gimenez"  
 categories: 
   - "updates"
 tags: 
   - "ieee"
   - "cunc"
   - "award"
-canonicalUrl: "https://hahatay.network/en/news_articles/20241129-ieee-cunc-winners/" 
-canonicalSiteName: "hahatay.network"
+canonicalUrl: "https://hahatay.network/updates/hahatay-network-prize-in-ieee-cunc-challenge-2024/" 
 ---
 
 We are proud to announce that our team has won the Hahatay Network Prize in the IEEE CUNC Challenge. The IEEE CUNC Challenge is a competition that recognizes proof of concept and prototype solutions that address the challenges of the future internet in underserved areas. Our solution has been awarded with the "Honorable Mention" prize in the proof of concept category.
