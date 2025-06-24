@@ -2,8 +2,6 @@
 title: "Hahatay Inaugurates New Labdoo Classroom"
 date: 2025-02-10
 lastmod: 2025-03-22
-authors: 
-  - "sergio-gimenez"  
 categories:
     - "updates"
 tags:
