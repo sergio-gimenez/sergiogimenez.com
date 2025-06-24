@@ -13,7 +13,7 @@ enableCodeCopy = true
 
 replyByEmail = false
 
-mainSections = ["blog"]
+mainSections = ["posts"]
 # robots = ""
 
 disableImageOptimization = false
@@ -56,7 +56,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showRecent = true
   showRecentItems = 5
   showMoreLink = true
-  showMoreLinkDest = "/blog/"
+  showMoreLinkDest = "/posts/"
   cardView = true
   cardViewScreenWidth = true
   layoutBackgroundBlur = false # only used when layout equals background
