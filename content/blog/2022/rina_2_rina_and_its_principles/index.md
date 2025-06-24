@@ -2,7 +2,7 @@
 title: A very brief introduction to RINA and its principles
 date: 2022-07-18
 tags: ["rina", "tcp/ip"]
-categories: ["networking"]
+categories: ["articles"]
 series: ["Introduction to RINA"]
 series_order: 2
 ---

@@ -2,7 +2,7 @@
 title: Is TCP/IP broken? What is RINA and why it can solve the problems of the current architecture
 date: 2022-07-03
 tags: ["rina", "tcp/ip"]
-categories: ["networking"]
+categories: ["articles"]
 series: ["Introduction to RINA"]
 series_order: 1
 ---
