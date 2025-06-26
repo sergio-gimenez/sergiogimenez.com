@@ -6,7 +6,7 @@ categories:
 tags:
   - "2025"
 authors:
-  -  "team-2025"
+  -  "senegal_team_2025"
 ---
 
 Hoy comenzamos el día con un buen desayuno y dividiéndonos en dos grupos para abordar las tareas programadas. Sergio, Jaume y Joan nos dirigimos a Aminata para intentar solucionar los problemas de conectividad en la red.

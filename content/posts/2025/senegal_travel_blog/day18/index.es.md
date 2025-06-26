@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 Nos despertamos sabiendo que nos esperaba otro día intenso lleno de trabajo y mejoras en la red.  

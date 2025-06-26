@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 Hoy llegó nuestro último día en Gandiol, marcado por la despedida.

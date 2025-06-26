@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 Hoy, lunes, comenzamos la semana con mucha energía y motivación despues de un finde de bastante relax.

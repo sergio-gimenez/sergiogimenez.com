@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 Nos levantamos muy pronto. Assane Bodge nos recoge en Hahatay a las 6:00 de la mañana para llevarnos a Saint-Louis, donde tomaremos el bus Dem Dikk hacia Dakar. Assane, con una puntualidad no especialmente propia de los senegaleses, se presenta a la hora acordada.

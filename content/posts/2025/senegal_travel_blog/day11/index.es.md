@@ -6,7 +6,7 @@ categories:
 tags:
   - "2025"
 authors:
-  - "team-2025"
+  - "senegal_team_2025"
 ---
 
 Hoy, miércoles, comenzó con un desayuno compartido bajo el calor típico de Senegal, pero el equipo mantuvo el buen ánimo y la motivación para seguir con los avances técnicos del proyecto.

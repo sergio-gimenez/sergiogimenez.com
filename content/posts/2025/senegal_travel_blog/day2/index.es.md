@@ -6,7 +6,7 @@ categories:
 tags:
   - "2025"
 authors:
-  -  "team-2025"
+  -  "senegal_team_2025"
 ---
 
 Por la mañana nos hemos dividido en dos grupos para abordar diferentes tareas relacionadas con la red y el proyecto. Un grupo (Roger y Sergio) se ha desplazado a Tabax Nité, donde se encuentran los servidores y routers que utilizamos. Durante la revisión, verificamos que todo sigue en orden y discutimos cómo mejorar la resiliencia de la red mediante:

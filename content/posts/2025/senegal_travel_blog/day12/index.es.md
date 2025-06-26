@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 Hoy ha sido un día de avances importantes en la infraestructura de la red, con visitas a centros locales y soluciones a problemas técnicos clave.  

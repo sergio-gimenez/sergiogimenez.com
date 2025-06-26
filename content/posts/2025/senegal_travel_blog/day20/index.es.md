@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 Hoy costó despertarse a todo el equipo ya que la cena se nos alargó un poco, así que fue una mañana un poco de relax.

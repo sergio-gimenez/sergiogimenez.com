@@ -6,7 +6,7 @@ categories:
 tags:
   - "2025"
 authors:
-  - "team-2025"
+  - "senegal_team_2025"
 ---
 
 El día comenzó de manera relajada, sin prisas. Nos levantamos tranquilamente y aprovechamos la mañana para avanzar en las tareas pendientes.

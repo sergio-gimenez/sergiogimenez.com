@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 Hoy hemos continuado con las tareas que teníamos planificadas, y cada equipo ha avanzado significativamente en sus objetivos.

@@ -6,7 +6,7 @@ categories:
 tags:
   - "2025"
 authors:
-  -  "team-2025"
+  -  "senegal_team_2025"
 ---
 Hoy ha sido un día lleno de reencuentros y primeras impresiones en Hahatay. Después de llegar, comenzamos el día con el desayuno, que sin duda es el mejor momento del día aquí. Compartimos una agradable mañana con Laura, los niños y toda la gente maravillosa que forma parte de Hahatay.
 

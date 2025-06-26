@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 El día comenzó con la misma rutina de siempre: un buen desayuno para cargar energías antes de ponernos en marcha. Pero hoy había una pequeña sorpresa en la mesa: Laura había preparado hummus casero, un pequeño cambio que hizo la diferencia y nos dejó a todos con el ánimo arriba.

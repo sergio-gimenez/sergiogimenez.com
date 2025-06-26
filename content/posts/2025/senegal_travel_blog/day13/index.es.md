@@ -6,7 +6,7 @@ categories:
 tags:
   - "2025"
 authors:
-  -  "team-2025"
+  -  "senegal_team_2025"
 ---
 
 Por la mañana, como de costumbre, nos hemos dividido en dos grupos para abordar las tareas pendientes del día:

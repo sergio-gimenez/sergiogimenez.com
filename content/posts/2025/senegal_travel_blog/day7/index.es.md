@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 Amanecimos sin prisas y decidimos tomarnos la mañana con calma. Fue un lujo levantarse tarde y disfrutar de un desayuno relajado mientras recordábamos, entre risas, los momentos más divertidos de la noche anterior.

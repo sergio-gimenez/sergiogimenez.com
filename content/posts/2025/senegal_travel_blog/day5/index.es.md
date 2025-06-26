@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 El día comenzó temprano en Sunukeur, con un desayuno que nos sirvió para arrancar con energía. Nos dividimos en los mismos equipos de dos del día anterior y dedicamos la mañana a avanzar en las tareas técnicas que teníamos pendientes.  

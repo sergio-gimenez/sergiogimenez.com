@@ -19,7 +19,7 @@ layoutBackgroundHeaderSpace: false
 
 # My Projects and Contributions
 
-Welcome to my projects page! Here, you'll find an overview of the various initiatives and contributions I've been involved in over the years. From side projects and open-source software to non-tech endeavors, this page showcases my passion for learning, creating, and making a positive impact in both the tech and non-tech worlds. Explore the sections below to learn more about the work I do and the causes I support.
+Here, you'll find an overview of the various initiatives and contributions I've been involved in over the years. From side projects and open-source software to non-tech hobbys and other stuff, this page showcases my passion for learning, creating, and making a positive impact in both the tech and non-tech worlds, as well the causes I support.
 
 ## Side Projects
 

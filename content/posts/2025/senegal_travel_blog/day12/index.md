@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 canonicalUrl: "https://hahatay.network/en/travel_blog/2025/day12/"
 canonicalSiteName: "hahatay.network"
 series: ["Senegal Travel Blog 2025"]

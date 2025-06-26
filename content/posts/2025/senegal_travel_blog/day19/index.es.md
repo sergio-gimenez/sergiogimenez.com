@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 Hoy nos despertamos con más tranquilidad, sabiendo que todo iba viento en popa. Desayunamos tranquilamente y nos ponemos manos a la obra.

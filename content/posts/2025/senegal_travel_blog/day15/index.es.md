@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 Esta mañana nos hemos levantado sin ninguna prisa, ya que la fiesta de anoche se alargó más de lo esperado. Dimos un paseo por el barrio con la intención de comer en el mismo sitio que ayer, pero al ser domingo, las mujeres habían cerrado el puesto.

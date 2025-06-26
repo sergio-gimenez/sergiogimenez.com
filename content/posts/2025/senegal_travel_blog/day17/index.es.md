@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 El martes comenzó con una larga lista de tareas, ya que queríamos acabar todo lo que teníamos pendiente antes de irnos. Después de desayunar, nos dividimos en grupos y nos pusimos manos a la obra.  

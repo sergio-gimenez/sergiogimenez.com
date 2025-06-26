@@ -6,7 +6,7 @@ categories:
 tags:  
   - "senegal travel blog"  
 authors:  
-  - "team-2025"  
+  - "senegal_team_2025"  
 ---
 
 Hoy nos hemos levantado sin mucha prisa, disfrutando de la calma matutina antes de empezar con los planes del día. Roger y Jaume han salido temprano a comprar los billetes de los ferries que usarán la semana que viene para viajar a Casamance, asegurando así su movilidad en el próximo tramo del viaje. Mientras tanto, Aitor, Joan y Sergio han visitado una tienda bien conocida para adquirir material imprescindible: cabezales ethernet y un tester de cables, elementos clave para continuar con nuestro trabajo.
