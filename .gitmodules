@@ -1,9 +1,0 @@
-[submodule "themes/coder"]
-	path = themes/coder
-	url = https://github.com/luizdepra/hugo-coder.git
-[submodule "themes/hugo-coder"]
-	path = themes/hugo-coder
-	url = https://github.com/luizdepra/hugo-coder.git
-[submodule "themes/plausible-hugo"]
-	path = themes/plausible-hugo
-	url = https://github.com/divinerites/plausible-hugo.git

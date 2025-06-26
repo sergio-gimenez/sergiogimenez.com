@@ -1,0 +1,30 @@
+{{- $caption := .Inner -}}
+{{- $class := "flex justify-center gap-4 items-start" -}}
+
+<div class="{{ $class }}">
+    {{- range .Params }}
+    {{- $url := urls.Parse . -}}
+    {{- $file := $url.Path -}}
+    {{- $img := $.Page.Resources.GetMatch $file -}}
+    {{- if and (not $img) $.Page.File }}
+    {{- $path := path.Join $.Page.File.Dir $file -}}
+    {{- $img = resources.Get $path -}}
+    {{- end -}}
+
+    <figure class="w-1/2 max-w-[45%] px-2">
+        {{- with $img -}}
+        {{ $lazy := $.Page.Site.Params.enableImageLazyLoading | default true }}
+        {{ $webp := $.Page.Site.Params.enableImageWebp | default true }}
+        <img src="{{ .RelPermalink }}"
+            class="w-full max-h-[400px] object-cover rounded-md">
+        {{- else -}}
+        <img src="{{ $url.String }}"
+            class="w-full max-h-[400px] object-cover rounded-md">
+        {{- end -}}
+    </figure>
+    {{- end }}
+</div>
+
+{{- with $caption }}
+<figcaption class="text-center text-sm mt-2">{{ . | markdownify }}</figcaption>
+{{- end }}
