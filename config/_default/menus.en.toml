@@ -21,6 +21,18 @@ pageRef = "posts"
 weight = 20
 
 [[main]]
+name = "Articles"
+pageRef = "categories/articles"
+weight = 25
+parent = "Posts"
+
+[[main]]
+name = "Life Updates"
+pageRef = "categories/updates"
+weight = 25
+parent = "Posts"
+
+[[main]]
 name = "About"
 pageRef = "about"
 weight = 30
@@ -53,16 +65,16 @@ pageRef = "cv"
 weight = 50
 
 [[main]]
-  name = "Academic"
-  parent = "Resume"
-  url = "/downloads/academic_cv.pdf"
-  weight = 20
+name = "Academic"
+parent = "Resume"
+url = "/downloads/academic_cv.pdf"
+weight = 20
 
 [[main]]
-  name = "Europass"
-  parent = "Resume"
-  url = "/downloads/europass_cv.pdf"
-  weight = 20
+name = "Europass"
+parent = "Resume"
+url = "/downloads/europass_cv.pdf"
+weight = 20
 
 
 # [[main]]
@@ -71,14 +83,14 @@ weight = 50
 # weight = 60
 
 [[main]]
-  name = ""
-  pre = "email"
-  url = "mailto:hi@sergiogimenez.com"
-  weight = 60
+name = ""
+pre = "email"
+url = "mailto:hi@sergiogimenez.com"
+weight = 60
 
 [[footer]]
-  name = "Privacy"
-  url = "https://external-link"
+name = "Privacy"
+url = "https://external-link"
 
 #[[main]]
 #  name = "example sub-menu 1"
