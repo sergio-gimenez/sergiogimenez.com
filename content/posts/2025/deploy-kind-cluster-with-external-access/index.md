@@ -1,6 +1,7 @@
 ---
 title: "Deploying a KinD Cluster with External Access"
 date: 2025-07-03
+lastmod: 2025-07-06
 categories:
     - "articles"
 tags:
@@ -15,6 +16,20 @@ Recently, I needed to deploy a KinD (Kubernetes in Docker) cluster that would be
 {{< /alert >}}
 
 ## 1. Create a KinD Cluster Config
+
+
+First install docker, follow the [official docs](https://docs.docker.com/engine/install/ubuntu/)
+
+Next, install kind following the [official docs](https://kind.sigs.k8s.io/docs/user/quick-start/)
+
+For linux, it's just
+
+```bash
+[ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.29.0/kind-linux-amd64
+chmod +x ./kind
+sudo mv ./kind /usr/local/bin/kind
+```
+Then, create a configuration file for your KinD cluster. This file will define the cluster's networking settings and node roles.
 
 Save the following content as `kind-config.yaml`:
 
