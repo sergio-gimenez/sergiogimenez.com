@@ -5,6 +5,7 @@ showDateOnlyInArticle : false
 showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
+showDate: false
 showReadingTime : false
 showTableOfContents : true
 showTaxonomies : false 
@@ -14,6 +15,7 @@ sharingLinks : false
 showEdit: false
 showViews: false
 showLikes: false
+lastmod: "2025-06-05"
 layoutBackgroundHeaderSpace: false
 
 title: "What am I doing now?"
