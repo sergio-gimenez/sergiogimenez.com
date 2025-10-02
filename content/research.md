@@ -15,50 +15,80 @@ showEdit: false
 showViews: false
 showLikes: false
 layoutBackgroundHeaderSpace: false
-
-#groupByYear : false
-
 ---
 
 # Publications
 
+*Last updated: October 2, 2025*
+
+
+## 2025
+
+- [**Extending Intent-Powered Network Management with LMs in B5G Infrastructures**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:ufrVoPGSRksC)  
+  *CC González, S Giménez-Antón, M Tarzán-Lorente, H Chergui, ...*  
+  Published in 2025.
+
+- [**Toward Adaptive and High-Performance XR Services via Network Programmability and Monitoring**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:LkGwnXOMwfcC)  
+  *C Fernández-Martínez, S Giménez-Antón, AA AbdelNabi, CC Parra, ...*  
+  Published in 2025.
+
+
 ## 2024
 
-- [**Progressive Adoption of RINA in IoT Networks: Enhancing Scalability and Network Management via SDN Integration**](https://doi.org/10.3390/app14062300)  
-  *Sarabia-Jácome D, et.al.*  
-  Published in *Applied Sciences*, 2024; 14(6):2300.  
+- [**6G-RUPA: a flexible, scalable, and energy-efficient user plane architecture for next-generation mobile networks**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:YsMSGLbcyi4C)  
+  *S Giménez-Antón, E Grasa, J Perelló, A Cárdenas*  
+  Published in 2024.
 
-- [**6G-RUPA: A Flexible, Scalable, and Energy-Efficient User Plane Architecture for Next-Generation Mobile Networks**](https://www.mdpi.com/2073-431X/13/8/186)  
-  *S. Giménez-Antón, E. Grasa, J. Perelló, A. Cárdenas*  
-  Published in *Computers*, 2024, 13, 186.  
+- [**Position paper: on the application of recursive inter-network architecture to the future quantum-enabled Internet**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:eQOLeE2rZwMC)  
+  *J Jordán-Parra, S Giménez-Antón, E Carmona-Cejudo, M Garcia-Romero, ...*  
+  Published in 2024.
 
-- [**Position Paper: On the Application of Recursive Inter-Network Architecture to the Future Quantum-Enabled Internet**](https://ieeexplore.ieee.org/abstract/document/10622389)  
-  *J. Jordán-Parra, et.al.*  
-  Published in *IEEE ICC 2024*, Denver, CO, USA, pp. 3628-3633.  
+- [**Progressive adoption of rina in iot networks: Enhancing scalability and network management via sdn integration**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:W7OEmFMy1HYC)  
+  *D Sarabia-Jácome, S Giménez-Antón, A Liatifis, E Grasa, M Catalán, ...*  
+  Published in 2024.
+
+
+## 2023
+
+- [**Open-VERSO: a vision of 5G experimentation infrastructures, hurdles and challenges**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:Tyk-4Ss8FVUC)  
+  *A Martin, P Losada, C Fernández, M Zorrilla, Z Fernandez, A Gabilondo, ...*  
+  Published in 2023.
+
 
 ## 2022
 
-- [**RINA-based virtual networking solution for distributed VNFs: Prototype and Benchmarking**](https://ieeexplore.ieee.org/abstract/document/9815620)  
-  *2022 Joint European Conference on Networks and Communications & 6G Summit (EuCNC/6G Summit)*  
+- [**Application of multi-pronged monitoring and intent-based networking to verticals in self-organising networks**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:UeHWp8X0CEIC)  
+  *C Fernández, A Cárdenas, S Giménez, J Uriol, M Serón, ...*  
+  Published in 2022.
 
-- [**Application of Multi-Pronged Monitoring and Intent-Based Networking to Verticals in Self-Organising Networks**](https://ieeexplore.ieee.org/abstract/document/9998422)  
-  *Carolina Fernández, et.al.*  
-  Published in *5th CommNet 2022*.  
+- [**Solutions for traffic isolation in 5G infrastructures using network slicing techniques**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:qjMakFHDy7sC)  
+  *Z Fernández, Á Gabilondo, Á Vázquez-Rodríguez, C Giraldo-Rodríguez, ...*  
+  Published in 2022.
 
-- [**Solutions for Traffic Isolation in 5G Infrastructures Using Network Slicing Techniques**](https://ieeexplore.ieee.org/abstract/document/9998422/)  
-  *Zaloa Fernández, Alvaro Gabilondo, Álvaro Vázquez-Rodríguez, Carlos Giraldo-Rodríguez, J Joaquín Escudero-Garzás, Sergio Giménez, Andrés Cárdenas, Carlos Herranz*  
-  Published in *32nd International Telecommunication Networks and Applications Conference (ITNAC)*.  
+- [**Rina-based virtual networking solution for distributed vnfs: Prototype and benchmarking**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:2osOgNQ5qMEC)  
+  *SG Antón, E Grasa, C Fernández, MS Siddiqui*  
+  Published in 2022.
+
+- [**Prototype and benchmark of a RINA-based virtual networking solution for Virtual Network Functions (VNFs)**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:9yKSN-GCB0IC)  
+  *S Giménez Antón*  
+  Published in 2022.
+
 
 ## 2020
 
-- [**A P4-Enabled RINA Interior Router for Software-Defined Data Centers**](https://www.mdpi.com/2073-431X/9/3/70)  
-  *C. Fernández, S. Giménez, E. Grasa, S. Bunch*  
-  Published in *Computers 9 (3), 70*.  
+- [**A P4-enabled RINA interior router for software-defined data centers**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:u-x6o8ySG0sC)  
+  *C Fernández, S Giménez, E Grasa, S Bunch*  
+  Published in 2020.
 
-- [**A Proof of Concept Implementation of a RINA Interior Router Using P4-Enabled Software Targets**](https://ieeexplore.ieee.org/document/9059486)  
-  *S. Gimenez, E. Grasa, S. Bunch*  
-  Published in *2020 IEEE 23rd Conference on Innovation in Clouds, Internet and Networks and Workshops*.  
+- [**A Proof of Concept implementation of a RINA interior router using P4-enabled software targets**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:u5HHmVD_uO8C)  
+  *S Gimenez, E Grasa, S Bunch*  
+  Published in 2020.
 
-- [**Development of a Low-Cost Prototype to Evaluate the Performance of Transdermal Optical Links**](https://upcommons.upc.edu/handle/2117/329137)  
-  *S. Giménez*  
-  Published in *AUTH & UPC, 2020*.  
+- [**Development of a low-cost prototype to evaluate the performance of Transdermal Optical Links**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:_FxGoFyzp5QC)  
+  *S Giménez Antón*  
+  Published in 2020.
+
+- [**Development of a low-cost prototype to evaluate the performance of Transdermal Optical Links**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9sbhDUAAAAJ&sortby=pubdate&citation_for_view=o9sbhDUAAAAJ:Y0pCki6q_DkC)  
+  *SG Antón*  
+  Published in 2020.
+
