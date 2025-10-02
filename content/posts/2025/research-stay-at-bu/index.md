@@ -3,7 +3,7 @@ title: "Research Stay at Boston University Fall Semester 2025"
 date: 2025-09-11
 lastmod: 2025-09-11
 categories:
-    - "news"
+    - "updates"
 tags:
     - "BU"
     - "Boston"
