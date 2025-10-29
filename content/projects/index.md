@@ -151,7 +151,7 @@ These are small projects that I work now or have worked in the past. They are us
     </tbody>
 </table>
 
-## Open Source Software
+## Open Source Software I Use and Support
 
 I am a strong believer in open source software, so I have allocated a few bucks every month to support some of the projects that I use almost everyday and would be hard to live without them.
 
@@ -180,14 +180,19 @@ I am a strong believer in open source software, so I have allocated a few bucks 
             <td><a target="_blank" href="https://logseq.com/">Site</a></td>
         </tr>
         <tr>
-            <td>Elementary OS</td>
+            <td>Debian</td>
             <td>My main Linux Distro since 2019</td>
-            <td><a target="_blank" href="https://elementary.io/">Site</a></td>
+            <td><a target="_blank" href="https://www.debian.org/">Site</a></td>
         </tr>
         <tr>
             <td>Bitwarden</td>
             <td>My password manager of choice</td>
             <td><a target="_blank" href="https://elementary.io/">Site</a></td>
+        </tr>
+        <tr>
+            <td>OpenWISP</td>
+            <td>Open-source network management system for managing network infrastructure</td>
+            <td><a target="_blank" href="https://openwisp.org/">Site</a></td>
         </tr>
     </tbody>
     </table>
@@ -205,7 +210,7 @@ Here is a list about non-tech projects I'm involved to. I believe that technolog
     </thead>
     <tbody>
         <tr>
-            <td>Campervan Conversion</td>
+            <td><a href="/tags/camper/">Campervan Conversion</a></td>
             <td>Converting my old Citroen Jumpy from 2006 into a functional campervan for traveling around Spain and Europe in Summer, and attending festivals.</td>
         </tr>
         <tr>
