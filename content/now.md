@@ -15,7 +15,7 @@ sharingLinks : false
 showEdit: false
 showViews: false
 showLikes: false
-lastmod: "2025-06-05"
+lastmod: "2025-11-16"
 layoutBackgroundHeaderSpace: false
 
 title: "What am I doing now?"
@@ -25,14 +25,18 @@ slug: "now"
 
 _Last updated at {{< lastmod >}}._
 
-- Pursuing a PhD for building more efficient and green future mobile networks: [:six: 6G-RUPA](https://6grupa.com)
-  - I've got a scholarship for a research stay at Boston University. So I'll be in Boston from September to December 2025 :us:
-- I'm the president of a very cool students organization at UPC: [AUCOOP](https://aucoop.upc.edu)
-- Maintaining a community network within [Hahatay](https://hahatay.org) in Senegal: [:senegal: hahatay.network](https://hahatay.network)
-- Starting a project to provide connectivity in a rural school in [Namibia :namibia:](https://foundawtion.org/archivos/5383)
-- Working as a R&D Engineer at [i2CAT](https://i2cat.net) 🤓
-- Contributing to [eReuse.org](https://ereuse.org) :recycle: project
-- Getting into climbing :climbing: and learning to make my own wine :wine_glass:
+- Pursuing a PhD with i2CAT and UPC on efficient and green 6G networks: [:six: 6G-RUPA](https://6grupa.com)
+  - Currently on a [research stay at Boston University]({{< ref "/posts/2025/research-stay-at-bu" >}}) on 6G-RUPA and RINA (Sep-Dec 2025) :us:
+- Working as a Telecommunications Engineer at [i2CAT](https://i2cat.net) 🤓
+  - Module Development Group Leader for Federation Manager at [ETSI's Open Operator Platform](https://oop.etsi.org/)
+  - Developer/DevOps for [GÉANT](https://www.geant.org/)
+  - Contributor to [OpenCAPIF](https://ocf.etsi.org/)
+  - Participant in several Spanish and European research projects.
+- President of [AUCOOP](https://aucoop.upc.edu), a UPC students organization doing IT-related cooperation projects
+- Maintaining [:senegal: hahatay.network](https://hahatay.network), a community network in Senegal with other volunteers
+- Starting a connectivity project in a school in Gochas, [Namibia :namibia:](https://foundawtion.org/archivos/5383)
+- Contributing to [eReuse.org](https://ereuse.org) :recycle: lifecycle management software for refurbished equipment
+- Besides nerdy stuff I really enjoy running, climbing :climbing:, making wine :wine_glass: (200L this year!), and [converting a 2006 van]({{< ref "/posts/2025/camper-history" >}}) for summer travels :bus:
 
 ---
 
