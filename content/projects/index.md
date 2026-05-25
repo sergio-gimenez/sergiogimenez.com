@@ -19,11 +19,11 @@ layoutBackgroundHeaderSpace: false
 
 # My Projects and Contributions
 
-Here, you'll find an overview of the various initiatives and contributions I've been involved in over the years. From side projects and open-source software to non-tech hobbys and other stuff, this page showcases my passion for learning, creating, and making a positive impact in both the tech and non-tech worlds, as well the causes I support.
+This page is a curated overview of the projects I build, maintain, or contribute to. The rest of this page adds context about the longer-term initiatives and communities behind that work.
 
-## Side Projects
+## Software Projects
 
-These are side projects I work and contribute on in my free time.
+These are the software projects that best represent what I am building and maintaining right now.
 
 <style>
 .project-table th, .project-table td {
@@ -38,114 +38,152 @@ These are side projects I work and contribute on in my free time.
 <table class="project-table">
     <thead>
         <tr>
+            <th>Project</th>
+            <th>Description</th>
+            <th>Role</th>
+            <th>References</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>LEOPath</td>
+            <td>A user-friendly, extensible Python-based simulator for analyzing routing algorithms in LEO satellite constellations.</td>
+            <td>Maintainer and lead developer at i2CAT.</td>
+            <td>
+              <a target="_blank" href="https://github.com/Fundacio-i2CAT/LEOPath">GitHub</a><br>
+              <a target="_blank" href="https://pypi.org/project/leopath/">PyPI</a>
+            </td>
+        </tr>
+        <tr>
+            <td>AUCOOP-Mint</td>
+            <td>A lightweight, no-nonsense, Windows-like OS for non-tech users with low-end refurbished hardware in mind.</td>
+            <td>Contributor and maintainer for AUCOOP's refurbished-laptop software stack.</td>
+            <td>
+              <a target="_blank" href="https://github.com/aucoop/AUCOOP-Mint">GitHub</a><br>
+              <a target="_blank" href="https://aucoop.github.io/AUCOOP-Mint/">Docs</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Community-Network-Handbook</td>
+            <td>A field guide to build community networks from scratch.</td>
+            <td>Contributor and editor for AUCOOP's community-network deployment documentation.</td>
+            <td>
+              <a target="_blank" href="https://github.com/aucoop/Community-Network-Handbook">GitHub</a><br>
+              <a target="_blank" href="https://aucoop.github.io/Community-Network-Handbook/">Site</a>
+            </td>
+        </tr>
+        <tr>
+            <td>PLMN-GraphSim</td>
+            <td>Julia-based discrete event simulator that works over network graphs from national-grade mobile network operators.</td>
+            <td>Contributor and researcher working on 6G network simulation and experimentation.</td>
+            <td>
+              <a target="_blank" href="https://github.com/Fundacio-i2CAT/PLMN-GraphSim">GitHub</a><br>
+              <a target="_blank" href="https://docs.plmngraphsim.org">Docs</a>
+            </td>
+        </tr>
+        <tr>
+            <td>opencode-sessions</td>
+            <td>Small CLI to search and reopen OpenCode sessions across all local projects.</td>
+            <td>Personal utility I built to speed up local AI-assisted development workflows.</td>
+            <td><a target="_blank" href="https://github.com/sergio-gimenez/opencode-sessions">GitHub</a></td>
+        </tr>
+        <tr>
+            <td>sergio-setup</td>
+            <td>Personal workstation bootstrap scripts.</td>
+            <td>My reproducible Linux setup for dev tools, shell, editor, keyboard, and sync services.</td>
+            <td><a target="_blank" href="https://github.com/sergio-gimenez/sergio-setup">GitHub</a></td>
+        </tr>
+    </tbody>
+</table>
+
+## Work Around The Software
+
+These are the longer-term initiatives and communities where I participate that shape a lot of the software work above.
+
+
+<table class="project-table">
+    <thead>
+        <tr>
             <th>Logo</th>
             <th>Title</th>
             <th>Description</th>
-            <th>Contribution</th>
+            <th>Role</th>
             <th>References</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td><img class="customEntityAlbum" style="background-color:transparent" src="hahatay_logo.png" alt="Hahatay Network Logo"/></td>
-            <td>
-              Hahatay Network
-              {{< badge >}}Active{{< /badge >}}
-            </td>
-            <td>A volunteer-driven community network in rural Senegal</td>
-            <td>Started in 2021, now leading technical efforts.</td>
+            <td>Hahatay Network</td>
+            <td>A volunteer-driven community network in rural Senegal.</td>
+            <td>Started in 2021. Today I lead and support much of the technical work.</td>
             <td>
               <a target="_blank" href="https://hahatay.network">Site</a><br>
-              <a target="_blank" href="https://github.com/aucoop/hahatay-community-network">GitHub</a><br>
+              <a target="_blank" href="https://github.com/aucoop/hahatay-community-network">GitHub</a>
             </td>
         </tr>
         <tr>
             <td><img class="customEntityAlbum" style="background-color:transparent" src="6grupa_logo.png" alt="6G-RUPA Logo"/></td>
-            <td>
-              6G-RUPA
-              {{< badge >}}Active{{< /badge >}}
-            </td>
-            <td>Advocating on improving networks of the future using recursive networks</td>
-            <td>This is what my whole PhD is about</td>
-            <td>
-              <a target="_blank" href="https://6grupa.com">Site</a><br>
-            </td>
+            <td>6G-RUPA</td>
+            <td>Research on improving future mobile networks using recursive architectures.</td>
+            <td>This is the core topic of my PhD and a recurring theme in several simulators above.</td>
+            <td><a target="_blank" href="https://6grupa.com">Site</a></td>
         </tr>
         <tr>
             <td><img class="customEntityAlbum" style="background-color:transparent" src="aucoop_logo.png" alt="AUCOOP Logo"/></td>
-            <td>
-              AUCOOP
-              {{< badge >}}Active{{< /badge >}}
-            </td>
-            <td>Student's association at the UPC that works on cooperation projects related with IT</td>
-            <td>Actively involved since 2017</td>
-            <td>
-              <a target="_blank" href="https://aucoop.upc.edu/">Site</a><br>
-            </td>
+            <td>AUCOOP</td>
+            <td>UPC student association focused on cooperation projects related to IT.</td>
+            <td>Actively involved since 2017. Current president since 2025.</td>
+            <td><a target="_blank" href="https://aucoop.upc.edu/">Site</a></td>
         </tr>
         <tr>
             <td><img class="customEntityAlbum" style="background-color:transparent" src="ereuse_logo.png" alt="eReuse Logo"/></td>
-            <td>
-              eReuse
-              {{< badge >}}Active{{< /badge >}}
-            </td>
-            <td>Contributing to open source software made by eReuse, specifically a device management system for reusing and refurbishing, erasing hard-drives, and diagnosing components</td>
-            <td>Contributions to eReuse software suite</td>
-            <td>
-              <a target="_blank" href="https://www.labdoo.org/en/">Site</a><br>
-            </td>
+            <td>eReuse</td>
+            <td>Open-source lifecycle management software for refurbishing, traceability, wiping, and diagnostics.</td>
+            <td>Contributor to the eReuse software ecosystem around refurbished devices.</td>
+            <td><a target="_blank" href="https://ereuse.org/">Site</a></td>
         </tr>
         <tr>
-            <td><img class="customEntityAlbum" style="background-color:transparent" src="labdoo_logo.png" alt="eReuse Logo"/></td>
-            <td>
-              Labdoo
-              {{< badge >}}Active{{< /badge >}}
-            </td>
-            <td>Labdoo is a social network of volunteers that provides refubrished laptops to schools in need</td>
-            <td>Hub Manager at <a href="https://platform.labdoo.org/content/labdoo-hub-barcelona-i2cat-campus-nord" target="_blank">i2CAT</a> and <a href="https://platform.labdoo.org/hub?h=86019" target="_blank">AUCOOP</a> at the UPC, contributing to projects in <a href="https://platform.labdoo.org/edoovillage?e=223473"target="_blank">Senegal</a>, Namibia and <a href="https://platform.labdoo.org/edoovillage?e=223473"target="_blank">Pakistan</a></td>
-            <td>
-              <a target="_blank" href="https://www.labdoo.org/en/">Site</a><br>
-            </td>
+            <td><img class="customEntityAlbum" style="background-color:transparent" src="labdoo_logo.png" alt="Labdoo Logo"/></td>
+            <td>Labdoo</td>
+            <td>A volunteer network that provides refurbished laptops to schools in need.</td>
+            <td>Hub manager at i2CAT and AUCOOP, contributing to projects in Senegal, Namibia, and Pakistan.</td>
+            <td><a target="_blank" href="https://www.labdoo.org/en/">Site</a></td>
         </tr>
     </tbody>
 </table>
 
-## Tech Pet Projects
+## Other Code Projects
 
-These are small projects that I work now or have worked in the past. They are usually not very big, but they are a good way to learn something new and share it with the world.
+Smaller software projects I built in the past to learn, experiment, or scratch a specific itch.
 
 <table class="project-table">
     <thead>
         <tr>
             <th>Title</th>
-            <th>Status</th>
             <th>Description</th>
             <th>References</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Github wiki to hugo</td>
-            <td>{{< badge >}}Active{{< /badge >}}</td>
-            <td>A project that converts pages from a Github wiki into hugo articles</td>
+            <td>GitHub wiki to Hugo</td>
+            <td>A project that converts pages from a GitHub wiki into Hugo articles.</td>
             <td><a target="_blank" href="https://github.com/sergio-gimenez/python-scaffolding">GitHub</a></td>
         </tr>
         <tr>
             <td>Python Scaffolding</td>
-            <td>{{< badge >}}Active{{< /badge >}}</td>
-            <td>A Python scaffolding project</td>
+            <td>A Python scaffolding project.</td>
             <td><a target="_blank" href="https://github.com/sergio-gimenez/python-scaffolding">GitHub</a></td>
         </tr>
         <tr>
             <td>Anomaly 4G Detection</td>
-            <td>{{< badge >}}Archived{{< /badge >}}</td>
-            <td>A project for detecting anomalies in 4G networks</td>
+            <td>A project for detecting anomalies in 4G networks.</td>
             <td><a target="_blank" href="https://github.com/sergio-gimenez/anomaly-4G-detection">GitHub</a></td>
         </tr>
         <tr>
             <td>Blockfunding</td>
-            <td>{{< badge >}}Archived{{< /badge >}}</td>
-            <td>A blockchain-based crowdfunding platform</td>
+            <td>A blockchain-based crowdfunding platform.</td>
             <td><a target="_blank" href="https://github.com/gerardcastell/blockfunding">GitHub</a></td>
         </tr>
     </tbody>
@@ -219,4 +257,3 @@ Here is a list about non-tech projects I'm involved to. I believe that technolog
         </tr>
     </tbody>
 </table>
-
