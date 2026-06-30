@@ -1,0 +1,155 @@
+{{ define "main" }}
+<article class="cv-shell">
+  <div class="cv-page">
+    <header class="cv-header">
+      <p class="cv-name">Sergio Giménez Antón</p>
+      <p class="cv-title">R&amp;D Software Engineer · Network Systems · PhD Candidate</p>
+      <ul class="cv-contact" aria-label="Contact links">
+        <li>Barcelona / Teruel, Spain</li>
+        <li><a href="mailto:hi@sergiogimenez.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/sergio-gimenez-anton/">LinkedIn</a></li>
+        <li><a href="https://github.com/sergio-gimenez/">GitHub</a></li>
+        <li><a href="https://sergiogimenez.com">Website</a></li>
+      </ul>
+      <div class="cv-actions print:hidden" aria-label="CV actions">
+        <button class="cv-action-button" type="button" onclick="window.print()">Generate PDF</button>
+        <a href="/downloads/academic_cv.pdf">Academic CV</a>
+        <a href="/downloads/europass_cv.pdf">Europass CV</a>
+      </div>
+    </header>
+
+    <section class="cv-section cv-section--summary">
+      <h2>Profile</h2>
+      <p class="cv-brief">
+        R&amp;D software engineer and PhD candidate with 5+ years building software, automation, and testbeds for
+        programmable networks and telecom platforms. Strongest where backend engineering, Linux/network systems,
+        research prototypes, and operations meet.
+      </p>
+    </section>
+
+    <section class="cv-section">
+      <h2>Core Skills</h2>
+      <dl class="cv-tech-list">
+        <div><dt>Software</dt><dd>Python, C, Ansible, P4, REST APIs, automation</dd></div>
+        <div><dt>Infrastructure</dt><dd>Linux, Docker, Kubernetes, QEMU/KVM, CI/CD, deployment automation, monitoring</dd></div>
+        <div><dt>Networking</dt><dd>5G/6G, TCP/IP, RINA, SDN, OpenWrt, netmap, network virtualization</dd></div>
+        <div><dt>Research</dt><dd>network architecture, simulation, benchmarking, technical writing, publications</dd></div>
+      </dl>
+    </section>
+
+    <section class="cv-section">
+      <h2>Experience</h2>
+
+      <article class="cv-job">
+        <header class="cv-job__header">
+          <div>
+            <h3>R&amp;D Software Engineer, Network Systems</h3>
+            <p class="cv-job__org"><a href="https://i2cat.net">i2CAT Foundation</a> · Barcelona, Spain</p>
+          </div>
+          <p class="cv-job__date">Sep 2020 - Present</p>
+        </header>
+        <ul>
+          <li>Build software, automation, and experimental infrastructure for programmable networks, telecom platforms, and 5G/6G testbeds.</li>
+          <li>Lead the Federation Manager module group within <a href="https://oop.etsi.org">ETSI Open Operator Platform (OpenOP)</a>, a 7-repository open-source platform with 30 listed contributor organizations; top module contributor by public GitStats (53/85 develop-branch commits).</li>
+          <li>Develop GÉANT network automation for virtual topology deployment and Containerlab-as-a-service workflows.</li>
+          <li>Research and implement <a href="https://6grupa.com">6G-RUPA</a> for PhD work, translating recursive networking ideas into architecture, simulation, and publications on scalable, energy-efficient mobile user planes.</li>
+        </ul>
+      </article>
+
+      <article class="cv-job">
+        <header class="cv-job__header">
+          <div>
+            <h3>Lecturer, Network Architecture</h3>
+            <p class="cv-job__org"><a href="https://www.upf.edu/">Universitat Pompeu Fabra</a> · Barcelona, Spain</p>
+          </div>
+          <p class="cv-job__date">Apr 2026 - Present</p>
+        </header>
+        <ul>
+          <li>Teach the second-year "Network Architecture" course in the Bachelor's Degree in Engineering.</li>
+        </ul>
+      </article>
+
+      <article class="cv-job">
+        <header class="cv-job__header">
+          <div>
+            <h3>Community Network Technical Lead</h3>
+            <p class="cv-job__org"><a href="https://hahatay.network">Hahatay Network</a> · Gandiol, Senegal / Remote</p>
+          </div>
+          <p class="cv-job__date">Sep 2020 - Present</p>
+        </header>
+        <ul>
+          <li>Lead technical operations for a rural community network serving approximately 50 users per day.</li>
+          <li>Run maintenance and expansion visits to Senegal, mentoring UPC students and volunteer contributors.</li>
+          <li>Deploy and troubleshoot OpenWrt routers, mesh connectivity, firmware, provisioning workflows, OpenWISP, and NetJSON templates.</li>
+        </ul>
+      </article>
+
+      <article class="cv-job">
+        <header class="cv-job__header">
+          <div>
+            <h3>Research Engineer</h3>
+            <p class="cv-job__org">Aristotle University of Thessaloniki · Greece</p>
+          </div>
+          <p class="cv-job__date">Feb 2020 - Jul 2020</p>
+        </header>
+        <ul>
+          <li>Designed and implemented a low-cost prototype to evaluate transdermal optical link performance.</li>
+        </ul>
+      </article>
+
+      <article class="cv-job">
+        <header class="cv-job__header">
+          <div>
+            <h3>Research Engineer Intern</h3>
+            <p class="cv-job__org"><a href="https://i2cat.net">i2CAT Foundation</a> · Barcelona, Spain</p>
+          </div>
+          <p class="cv-job__date">Aug 2019 - Jan 2020</p>
+        </header>
+        <ul>
+          <li>Built a P4 prototype of RINA data transfer and data transfer control elements.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="cv-section cv-section--projects">
+      <h2>Selected Projects and Leadership</h2>
+      <article class="cv-project">
+        <h3><a href="https://github.com/Fundacio-i2CAT/LEOPath">LEOPath</a></h3>
+        <p>Maintain and lead LEOPath, a Python simulator for LEO satellite routing with 300+ commits, public docs/demo, releases, and a PyPI package.</p>
+      </article>
+      <article class="cv-project">
+        <h3><a href="https://aucoop.upc.edu/">AUCOOP</a></h3>
+        <p>President of a UPC student association focused on IT cooperation projects; supervised 5+ student-led cooperation projects.</p>
+      </article>
+      <article class="cv-project">
+        <h3><a href="https://ereuse.org">eReuse.org</a></h3>
+        <p>Contribute to open-source lifecycle management software for refurbished equipment, diagnostics, reuse, and digital sustainability workflows.</p>
+      </article>
+      <article class="cv-project">
+        <h3><a href="/posts/2026/openwrt-cudy-w3000-v1/">OpenWrt Guides</a></h3>
+        <p>Write practical technical guides for router flashing, firmware installation, and low-cost network deployments.</p>
+      </article>
+    </section>
+
+    <section class="cv-section cv-section--education">
+      <h2>Education</h2>
+      <ul class="cv-meta-list">
+        <li><strong>PhD, Computer Systems Networking and Telecommunications</strong><span>Universitat Politècnica de Catalunya · 2024 - 2027 expected · 6G-RUPA, recursive user-plane architecture for 6G networks</span></li>
+        <li><strong>MSc, Advanced Telecommunication Technologies</strong><span>Universitat Politècnica de Catalunya · 2020 - 2022</span></li>
+        <li><strong>BSc, Computer Systems Networking and Telecommunications</strong><span>Universitat Politècnica de Catalunya · 2015 - 2020</span></li>
+      </ul>
+    </section>
+
+    <section class="cv-section cv-section--publications">
+      <h2>Selected Publications</h2>
+      <ul class="cv-meta-list">
+        <li><strong>6G-RUPA: flexible, scalable, and energy-efficient user plane architecture</strong><span>2024</span></li>
+        <li><strong>Intent-powered network management with LMs in B5G infrastructures</strong><span>2025</span></li>
+        <li><strong>Progressive adoption of RINA in IoT networks via SDN integration</strong><span>2024</span></li>
+        <li><strong>P4-enabled RINA interior router for software-defined data centers</strong><span>2020</span></li>
+      </ul>
+      <p class="cv-footnote"><a href="/research/">Full publication list</a> · <a href="https://scholar.google.com/citations?user=8Z6J9QoAAAAJ&amp;hl=en">Google Scholar</a></p>
+    </section>
+  </div>
+</article>
+{{ end }}

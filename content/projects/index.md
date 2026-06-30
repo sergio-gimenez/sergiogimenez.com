@@ -23,7 +23,7 @@ This page is a curated overview of the projects I build, maintain, or contribute
 
 ## Software Projects
 
-These are the software projects that best represent what I am building and maintaining right now.
+These are the software projects and software initiatives that best represent what I am building and maintaining right now.
 
 <style>
 .project-table th, .project-table td {
@@ -45,6 +45,16 @@ These are the software projects that best represent what I am building and maint
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td>OpenOP Federation Manager</td>
+            <td>The federation layer of ETSI's Open Operator Platform, an open-source operator platform for federating networks, testbeds, and service capabilities.</td>
+            <td>Module Development Group Leader for the Federation Manager, responsible for technical roadmap and architectural integrity.</td>
+            <td>
+              <a target="_blank" href="https://oop.etsi.org">OpenOP</a><br>
+              <a target="_blank" href="https://oop.etsi.org/documentation/">Docs</a><br>
+              <a target="_blank" href="https://labs.etsi.org/rep/oop/">Code</a>
+            </td>
+        </tr>
         <tr>
             <td>LEOPath</td>
             <td>A user-friendly, extensible Python-based simulator for analyzing routing algorithms in LEO satellite constellations.</td>

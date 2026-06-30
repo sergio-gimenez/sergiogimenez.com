@@ -20,7 +20,7 @@ My name is Sergio Giménez, I'm from Barcelona. However, currently I live betwee
 
 I have both a bachelor and master's degree in Telecommunications Engineering from Universitat Politècnica de Catalunya. Currently I'm pursuing a PhD in the Compute Architecture Deparment. My research is focused on the development of new algorithms and protocols for the next generation of mobile networks, we call it [6G-RUPA][6grupa].
 
-At my job I work as a researcher 🧑‍🎓 in the Software Networks area at the [i2cat Foundation][i2cat], a non-profit research and innovation center. You can see my research in my [Google Scholar profile](https://scholar.google.com/citations?user=8Z6J9QoAAAAJ&hl=en).
+At my job I work as a researcher 🧑‍🎓 in the Software Networks area at the [i2cat Foundation][i2cat], a non-profit research and innovation center. Right now I'm leading the Federation Manager Module Development Group within [ETSI's Open Operator Platform (OpenOP)][openop], and I also teach the "Network Architecture" course part-time at [Universitat Pompeu Fabra][upf]. You can see my research in my [Google Scholar profile](https://scholar.google.com/citations?user=8Z6J9QoAAAAJ&hl=en).
 
 I'm also leading a volunteer-driven community network in [Hahatay][hahatay], [Gandiol Senegal](gandiol) :senegal:. We are building a community network to provide internet access to the local population. You can learn more about the project at [hahatay.network](https://hahatay.network).
 
@@ -39,6 +39,8 @@ So, this is my portfolio and my blog. I wish you could learn something from here
 [upc]: http://upc.edu
 [ac]: https://www.ac.upc.edu/en
 [i2cat]: https://i2cat.net
+[openop]: https://oop.etsi.org
+[upf]: https://www.upf.edu/
 [6grupa]: https://6grupa.com
 [hahatay]: https://hahatay.org
 [gandiol]: https://maps.app.goo.gl/CxSkTdfESH8opv7E6
