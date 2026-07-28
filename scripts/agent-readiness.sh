@@ -30,6 +30,7 @@ for bot in GPTBot ClaudeBot PerplexityBot OAI-SearchBot Google-Extended; do
   echo "$R" | grep -q "User-agent: $bot" && ok "explicit rule: $bot" || bad "no rule for $bot"
 done
 echo "$R" | grep -qi "Sitemap:" && ok "sitemap declared" || bad "no sitemap line"
+echo "$R" | grep -qE '^Content-Signal: .*ai-train=yes.*search=yes.*ai-input=yes' && ok "Content Signals allow AI use" || bad "Content Signals missing or incomplete"
 
 hdr "2. llms.txt standard"
 contains "$BASE/llms.txt" '^# ' "llms.txt has H1 title"
@@ -41,6 +42,7 @@ L=$(body "$BASE/llms-full.txt" | wc -c)
 hdr "3. Machine-readable content"
 status_is "$BASE/index.xml" "RSS feed exists"
 status_is "$BASE/index.json" "JSON index exists"
+status_is "$BASE/index.md" "home markdown output exists"
 contains "$BASE/index.xml" '<content:encoded' "RSS is full-text"
 if [ -n "$FIRST_POST" ]; then
   status_is "${FIRST_POST}index.md" "post markdown output ($FIRST_POST)"
@@ -66,6 +68,14 @@ hdr "6. Entity clarity"
 status_is "$BASE/about/" "about page exists"
 echo "$H" | grep -qE 'rel="?me"?' && ok "rel=me links present" || bad "no rel=me links"
 status_is "$BASE/cv/" "cv page exists"
+
+if [[ "$BASE" == https://* ]]; then
+  hdr "7. Edge negotiation"
+  MD_HEADERS=$(curl -sD - -o /dev/null --max-time 10 -H "Accept: text/markdown" "$BASE/" 2>/dev/null)
+  echo "$MD_HEADERS" | grep -qi '^content-type: text/markdown' && ok "Accept: text/markdown negotiated" || bad "homepage did not negotiate Markdown"
+  LINK_HEADERS=$(curl -sD - -o /dev/null --max-time 10 "$BASE/" 2>/dev/null)
+  echo "$LINK_HEADERS" | grep -qEi '^link:.*rel="?(api-catalog|service-desc|service-doc|describedby)"?' && ok "agent-useful Link relation present" || bad "no agent-useful Link relation"
+fi
 
 printf "\n== Score: %d pass / %d fail ==\n" "$PASS" "$FAIL"
 [ "$FAIL" -eq 0 ]

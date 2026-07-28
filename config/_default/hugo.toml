@@ -55,7 +55,7 @@ domain = "plausible.sergiogimenez.com"
     isPlainText = true
 
 [outputs]
-home = ["HTML", "RSS", "JSON", "LLMS", "LLMSFull"]
+home = ["HTML", "RSS", "JSON", "LLMS", "LLMSFull", "Markdown"]
 page = ["HTML", "Markdown"]
 
 [related]
