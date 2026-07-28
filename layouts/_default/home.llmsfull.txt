@@ -1,0 +1,19 @@
+# {{ .Site.Title }} — full content
+
+> {{ .Site.Params.description | plainify | chomp }}
+
+Plaintext dump of all pages and posts, generated for LLM/agent consumption.
+Canonical site: {{ .Site.BaseURL }}
+{{ range .Site.RegularPages }}
+================================================================================
+## {{ .Title }}
+URL: {{ .Permalink }}
+{{- if not .Date.IsZero }}
+Date: {{ .Date.Format "2006-01-02" }}
+{{- end }}
+{{- with .Params.tags }}
+Tags: {{ delimit . ", " }}
+{{- end }}
+
+{{ .RawContent }}
+{{ end }}

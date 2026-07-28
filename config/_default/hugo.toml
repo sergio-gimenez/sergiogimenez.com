@@ -36,8 +36,27 @@ priority = 0.5
 domain = "plausible.sergiogimenez.com"
 
 
+[mediaTypes]
+  [mediaTypes."text/markdown"]
+    suffixes = ["md"]
+
+[outputFormats]
+  [outputFormats.LLMS]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+  [outputFormats.LLMSFull]
+    mediaType = "text/plain"
+    baseName = "llms-full"
+    isPlainText = true
+  [outputFormats.Markdown]
+    mediaType = "text/markdown"
+    baseName = "index"
+    isPlainText = true
+
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON", "LLMS", "LLMSFull"]
+page = ["HTML", "Markdown"]
 
 [related]
 threshold = 0
