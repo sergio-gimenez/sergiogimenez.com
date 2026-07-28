@@ -1,0 +1,51 @@
+{{/* Person JSON-LD: machine-readable identity for agents and knowledge graphs */}}
+{{ if .IsHome }}
+{{ $a := .Site.Params.author }}
+{{ $sameAs := slice "https://scholar.google.com/citations?user=8Z6J9QoAAAAJ&hl=en" }}
+{{ range $l := $a.links }}
+  {{ range $k, $v := $l }}
+    {{ if not (strings.HasPrefix $v "mailto:") }}
+      {{ $sameAs = $sameAs | append $v }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $img := resources.Get "profile.jpg" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ .Site.BaseURL }}#person",
+  "name": "{{ $a.name | safeJS }}",
+  "email": "mailto:{{ $a.email }}",
+  "url": "{{ .Site.BaseURL }}",
+  {{ with $img }}"image": "{{ .Permalink }}",{{ end }}
+  "description": "PhD researcher in mobile networks (6G), researcher at the i2cat Foundation, part-time lecturer at Universitat Pompeu Fabra, and community-networks volunteer.",
+  "jobTitle": "PhD Researcher",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "i2cat Foundation",
+    "url": "https://i2cat.net"
+  },
+  "affiliation": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Universitat Politècnica de Catalunya",
+      "url": "https://www.upc.edu"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Universitat Pompeu Fabra",
+      "url": "https://www.upf.edu"
+    }
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universitat Politècnica de Catalunya",
+    "url": "https://www.upc.edu"
+  },
+  "knowsAbout": ["mobile networks", "6G", "network federation", "distributed systems", "community networks"],
+  "nationality": "Spain",
+  "sameAs": {{ $sameAs | jsonify | safeJS }}
+}
+</script>
+{{ end }}
