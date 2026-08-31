@@ -1,11 +1,10 @@
 ---
-showDate : true
 showAuthor : false
 showDateOnlyInArticle : false
 showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
-showDate: false
+showDate: true
 showReadingTime : false
 showTableOfContents : true
 showTaxonomies : false 
@@ -26,7 +25,6 @@ slug: "now"
 _Last updated at {{< lastmod >}}._
 
 - Pursuing a PhD with i2CAT and UPC on efficient and green 6G networks: [:six: 6G-RUPA](https://6grupa.com)
-  - Currently on a [research stay at Boston University]({{< ref "/posts/2025/research-stay-at-bu" >}}) on 6G-RUPA and RINA (Sep-Dec 2025) :us:
 - Working as a Telecommunications Engineer at [i2CAT](https://i2cat.net) 🤓
   - Module Development Group Leader for the Federation Manager at [ETSI's Open Operator Platform](https://oop.etsi.org/)
   - Developer/DevOps for [GÉANT](https://www.geant.org/)

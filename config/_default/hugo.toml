@@ -10,6 +10,12 @@ defaultContentLanguage = "en"
 enableRobotsTXT = true
 summaryLength = 0
 
+# Only `en` is configured. The es/fr sibling files under content/ are cross-post
+# translations that aren't published; ignore them so Hugo 0.158+ doesn't fold
+# their front-matter taxonomy terms into the English site. Drop this if the site
+# ever goes multilingual (and configure the languages instead).
+ignoreFiles = ['/index\.es\.md$', '/index\.fr\.md$']
+
 buildDrafts = false
 buildFuture = false
 

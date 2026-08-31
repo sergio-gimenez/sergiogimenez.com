@@ -49,3 +49,7 @@
 }
 </script>
 {{ end }}
+
+{{/* Plausible analytics — needs page context, so it lives here rather than in
+     the theme's site-scoped partials/extend-head.html hook. */}}
+{{ partial "plausible_head.html" . }}

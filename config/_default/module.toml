@@ -1,6 +1,6 @@
 [hugoVersion]
-extended = false
-min = "0.87.0"
+extended = true
+min = "0.158.0"
 
 [[imports]]
 disable = false
