@@ -1,4 +1,3 @@
-{{- $domain := .Page.Scratch.Get "domain" -}}
 {{- $plausible_domain := .Page.Scratch.Get "plausible_domain" -}}
 {{- $script_name := .Page.Scratch.Get "script_name" -}}
 {{- $proxy_netlify := site.Params.plausible.proxy_netlify | default false -}}
@@ -10,4 +9,11 @@
   {{- $self_host_js = printf "https://%s/js/%s" $plausible_domain $script_name -}}
 {{- end -}}
 
-<script defer data-domain="{{ $domain }}" src="{{ $self_host_js }}"></script>
+<script async src="{{ $self_host_js }}"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+{{- if eq .Kind "404" }}
+<script>plausible("404",{props:{path:document.location.pathname}})</script>
+{{- end }}
