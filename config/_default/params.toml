@@ -34,8 +34,10 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   domain = "sergiogimenez.com"
   plausible_domain = "plausible.sergiogimenez.com"
   local = true
-  track_file_downloads = true
-  track_outbound_links = true
+  # Per-site tracker (Plausible >= 3.1). Outbound links, file downloads, form
+  # submissions, 404s and tagged events are toggled in Plausible's Site
+  # Settings -> Site installation, not here.
+  script_name = "pa-Vp_ZGr4cftHgx3wyPcHwA.js"
   debug=false
   enable=true
 
