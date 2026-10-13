@@ -129,41 +129,9 @@ func scrapeGoogleScholar(userID string) ([]Publication, error) {
 	})
 
 	c.OnHTML("tr.gsc_a_tr", func(e *colly.HTMLElement) {
-		titleElement := e.DOM.Find("a.gsc_a_at")
-		title := strings.TrimSpace(titleElement.Text())
-		if title == "" {
-			return
+		if pub, ok := parseRow(e.DOM); ok {
+			publications = append(publications, pub)
 		}
-
-		href, exists := titleElement.Attr("href")
-		var pubURL string
-		if exists {
-			pubURL = "https://scholar.google.com" + href
-		}
-
-		authorsJournal := strings.TrimSpace(e.DOM.Find("div.gs_gray").First().Text())
-		yearText := strings.TrimSpace(e.DOM.Find("span.gsc_a_h").Text())
-
-		citationsText := strings.TrimSpace(e.DOM.Find("a.gsc_a_ac").Text())
-		citations := 0
-		if citationsText != "" {
-			if c, err := strconv.Atoi(citationsText); err == nil {
-				citations = c
-			}
-		}
-
-		authors, journal := parseAuthorsJournal(authorsJournal)
-
-		publication := Publication{
-			Title:     title,
-			Authors:   authors,
-			Journal:   journal,
-			Year:      yearText,
-			URL:       pubURL,
-			Citations: citations,
-		}
-
-		publications = append(publications, publication)
 	})
 
 	c.OnError(func(r *colly.Response, err error) {
@@ -234,38 +202,9 @@ func parseFromHTMLFile(filePath string) ([]Publication, error) {
 	var publications []Publication
 
 	doc.Find("tr.gsc_a_tr").Each(func(i int, s *goquery.Selection) {
-		titleSel := s.Find("a.gsc_a_at")
-		title := strings.TrimSpace(titleSel.Text())
-		if title == "" {
-			return
+		if pub, ok := parseRow(s); ok {
+			publications = append(publications, pub)
 		}
-
-		var pubURL string
-		if href, exists := titleSel.Attr("href"); exists {
-			pubURL = "https://scholar.google.com" + href
-		}
-
-		authorsJournal := strings.TrimSpace(s.Find("div.gs_gray").First().Text())
-		yearText := strings.TrimSpace(s.Find("span.gsc_a_h").Text())
-
-		citationsText := strings.TrimSpace(s.Find("a.gsc_a_ac").Text())
-		citations := 0
-		if citationsText != "" {
-			if c, err := strconv.Atoi(citationsText); err == nil {
-				citations = c
-			}
-		}
-
-		authors, journal := parseAuthorsJournal(authorsJournal)
-
-		publications = append(publications, Publication{
-			Title:     title,
-			Authors:   authors,
-			Journal:   journal,
-			Year:      yearText,
-			URL:       pubURL,
-			Citations: citations,
-		})
 	})
 
 	if len(publications) == 0 {
@@ -275,19 +214,47 @@ func parseFromHTMLFile(filePath string) ([]Publication, error) {
 	return publications, nil
 }
 
-func parseAuthorsJournal(text string) (authors, journal string) {
-	separators := []string{" - ", " – ", " — "}
+var scholarBase, _ = url.Parse("https://scholar.google.com")
 
-	for _, sep := range separators {
-		if strings.Contains(text, sep) {
-			parts := strings.SplitN(text, sep, 2)
-			if len(parts) == 2 {
-				return strings.TrimSpace(parts[0]), strings.TrimSpace(parts[1])
-			}
+// parseRow extracts one publication from a "tr.gsc_a_tr" row of the profile table.
+// The row holds two "div.gs_gray" lines: authors, then venue ending in ", <year>".
+func parseRow(row *goquery.Selection) (Publication, bool) {
+	titleSel := row.Find("a.gsc_a_at")
+	title := strings.TrimSpace(titleSel.Text())
+	if title == "" {
+		return Publication{}, false
+	}
+
+	// Scholar has served both relative and absolute hrefs; resolve either.
+	var pubURL string
+	if href, exists := titleSel.Attr("href"); exists {
+		if ref, err := url.Parse(href); err == nil {
+			pubURL = scholarBase.ResolveReference(ref).String()
 		}
 	}
 
-	return text, ""
+	gray := row.Find("div.gs_gray")
+	authors := strings.TrimSpace(gray.Eq(0).Text())
+	journal := strings.TrimSpace(gray.Eq(1).Text())
+	yearText := strings.TrimSpace(row.Find("span.gsc_a_h").Text())
+	if yearText != "" {
+		journal = strings.TrimSuffix(journal, ", "+yearText)
+	}
+	journal = strings.TrimSuffix(journal, ", 0")
+
+	citations := 0
+	if c, err := strconv.Atoi(strings.TrimSpace(row.Find("a.gsc_a_ac").Text())); err == nil {
+		citations = c
+	}
+
+	return Publication{
+		Title:     title,
+		Authors:   authors,
+		Journal:   journal,
+		Year:      yearText,
+		URL:       pubURL,
+		Citations: citations,
+	}, true
 }
 
 func generateMarkdown(publications []Publication, outputPath string) error {
@@ -338,6 +305,14 @@ layoutBackgroundHeaderSpace: false
 			if years[i] < years[j] {
 				years[i], years[j] = years[j], years[i]
 			}
+		}
+	}
+
+	// Undated entries are usually accepted or preprint work; list them first.
+	if pubs, ok := yearGroups["Unknown"]; ok {
+		content.WriteString("\n## Forthcoming\n\n")
+		for _, pub := range pubs {
+			content.WriteString(formatPublication(pub) + "\n\n")
 		}
 	}
 

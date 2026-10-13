@@ -1,7 +1,7 @@
 {{/* Person JSON-LD: machine-readable identity for agents and knowledge graphs */}}
 {{ if .IsHome }}
 {{ $a := .Site.Params.author }}
-{{ $sameAs := slice "https://scholar.google.com/citations?user=8Z6J9QoAAAAJ&hl=en" }}
+{{ $sameAs := slice "https://scholar.google.com/citations?user=o9sbhDUAAAAJ&hl=en" }}
 {{ range $l := $a.links }}
   {{ range $k, $v := $l }}
     {{ if not (strings.HasPrefix $v "mailto:") }}

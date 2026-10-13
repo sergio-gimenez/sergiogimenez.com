@@ -1,0 +1,14 @@
+<article class="cv-job">
+  <header class="cv-job__header">
+    <div>
+      <h3>{{ .Get "title" }}</h3>
+      {{- with .Get "org" }}
+      <p class="cv-job__org">{{ $.Page.RenderString . }}</p>
+      {{- end }}
+    </div>
+    {{- with .Get "date" }}
+    <p class="cv-job__date">{{ . }}</p>
+    {{- end }}
+  </header>
+  {{ $.Page.RenderString (dict "display" "block") .Inner }}
+</article>
