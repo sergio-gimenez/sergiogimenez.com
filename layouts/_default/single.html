@@ -36,14 +36,18 @@
       {{ end }}
     </header>
 
-    {{/* Cross-post notice (custom): show when the canonical lives on another site */}}
-    {{ with .Params.canonicalUrl }}
+    {{/* Cross-post notice (custom): show when the original lives on another site.
+         canonicalUrl = same-language copy (also sets <link rel="canonical">);
+         originalUrl  = translated copy (no canonical: the original is another language). */}}
+    {{ with .Params.canonicalUrl | default .Params.originalUrl }}
     <div class="original-post-notice">
         <p>
-        This post was originally published on
+        This post was originally published
+        {{- with $.Params.translatedFrom }} in {{ . }}{{ end }} on
         <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
-            {{- $.Params.canonicalSiteName | default "the original blog" -}}
+            {{- $.Params.canonicalSiteName | default $.Params.originalSiteName | default "the original blog" -}}
         </a>.
+        {{- with $.Params.translatedFrom }} The English translation is AI-driven and has been reviewed.{{ end }}
         </p>
     </div>
     {{ end }}
