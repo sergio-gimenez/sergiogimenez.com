@@ -34,7 +34,7 @@ R&D software engineer and PhD candidate with 5+ years building software, automat
 ## Core Skills
 
 Software
-: Python, C, Ansible, P4, REST APIs, automation
+: Language knowledge does not matter that much these days... But I'm knowledgeable at Python, C, Ansible, P4, REST APIs, automation
 
 Infrastructure
 : Linux, Docker, Kubernetes, QEMU/KVM, CI/CD, deployment automation, monitoring
