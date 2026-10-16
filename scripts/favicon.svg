@@ -1,0 +1,9 @@
+<!-- Source of the favicon set in static/. Regenerate (needs rsvg-convert + Inter, ImageMagick):
+     for s in 16 32 48 180 192 512; do rsvg-convert -w $s -h $s -o /tmp/f-$s.png scripts/favicon.svg; done
+     then copy to static/favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png (180),
+     android-chrome-192x192.png, android-chrome-512x512.png, and: magick /tmp/f-{16,32,48}.png static/favicon.ico -->
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="112" fill="#15201c"/>
+<text x="236" y="340" font-family="Inter" font-weight="800" font-size="300" letter-spacing="-18" fill="#f6f8f6" text-anchor="middle">sg</text>
+<circle cx="418" cy="322" r="34" fill="#00cb95"/>
+</svg>
