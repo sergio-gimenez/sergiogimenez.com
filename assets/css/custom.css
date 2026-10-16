@@ -1,5 +1,27 @@
+/* Colour tokens used below. Blowfish does not define these, so without this block
+   dark mode fell back to grey-on-charcoal text and near-white borders. */
+:root {
+    --text-color: rgb(var(--color-neutral-900));
+    --secondary-text-color: rgb(var(--color-neutral-600));
+    --border-color: rgb(var(--color-neutral-200));
+    --body-background: rgb(var(--color-neutral));
+    --surface-tint: rgb(var(--color-neutral-100));
+    --primary: rgb(var(--color-primary-700));
+    --primary-dark: rgb(var(--color-primary-900));
+}
+
+.dark {
+    --text-color: rgb(var(--color-neutral-50));
+    --secondary-text-color: rgb(var(--color-neutral-300));
+    --border-color: rgb(var(--color-neutral-600));
+    --body-background: rgb(var(--color-neutral-800));
+    --surface-tint: rgb(var(--color-neutral-700));
+    --primary: rgb(var(--color-primary-400));
+    --primary-dark: rgb(var(--color-primary-300));
+}
+
 .original-post-notice {
-    background: linear-gradient(90deg, var(--body-background) 80%, #f5f7fa 100%);
+    background: linear-gradient(90deg, var(--body-background) 80%, var(--surface-tint) 100%);
     border: 1px solid var(--border-color);
     border-left: 5px solid var(--primary);
     border-radius: var(--border-radius);
