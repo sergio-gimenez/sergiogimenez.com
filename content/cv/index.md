@@ -29,7 +29,9 @@ layoutBackgroundHeaderSpace: false
 
 ## Profile
 
-R&D software engineer and PhD candidate with 5+ years building software, automation, and testbeds for programmable networks and telecom platforms. Strongest where backend engineering, Linux/network systems, research prototypes, and operations meet.
+R&D software engineer and PhD candidate with 5+ years building software, automation, and testbeds for programmable networks and telecom platforms. 
+
+Very happy living in the intersection between software engineering, networks, sysadmin, cloud and academia meet.
 
 ## Core Skills
 
