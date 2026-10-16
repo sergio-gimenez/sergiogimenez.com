@@ -11,6 +11,7 @@ tags:
     - "3GPP"
     - "UPF"
     - "Network Slicing"
+showHero: false
 canonicalUrl: "https://6grupa.com/posts/understanding-network-slicing/"
 canonicalSiteName: "6grupa.com"
 ---

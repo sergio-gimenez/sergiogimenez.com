@@ -10,6 +10,7 @@ tags:
     - "IPC model"
     - "User plane"
     - "EFCP"
+showHero: false
 canonicalUrl: "https://6grupa.com/posts/5g-already-has-layers/"
 canonicalSiteName: "6grupa.com"
 ---

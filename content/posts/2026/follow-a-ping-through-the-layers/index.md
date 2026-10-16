@@ -10,6 +10,7 @@ tags:
     - "RINA"
     - "IPC model"
     - "Roaming"
+showHero: false
 canonicalUrl: "https://6grupa.com/posts/follow-a-ping-through-the-layers/"
 canonicalSiteName: "6grupa.com"
 ---

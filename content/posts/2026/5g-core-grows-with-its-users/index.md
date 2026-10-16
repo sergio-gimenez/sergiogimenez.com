@@ -10,6 +10,7 @@ tags:
     - "UPF"
     - "Scalability"
     - "Forwarding state"
+showHero: false
 canonicalUrl: "https://6grupa.com/posts/5g-core-grows-with-its-users/"
 canonicalSiteName: "6grupa.com"
 ---
