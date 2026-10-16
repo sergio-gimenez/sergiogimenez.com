@@ -28,14 +28,17 @@ _Last updated at {{< lastmod >}}._
 - Working as a Telecommunications Engineer at [i2CAT](https://i2cat.net) 🤓
   - Module Development Group Leader for the Federation Manager at [ETSI's Open Operator Platform](https://oop.etsi.org/)
   - Developer/DevOps for [GÉANT](https://www.geant.org/)
-  - Contributor to [OpenCAPIF](https://ocf.etsi.org/)
   - Participant in several Spanish and European research projects.
 - Since April 2026, also lecturing part-time at [Universitat Pompeu Fabra](https://www.upf.edu/) for the "Network Architecture" course in the 2nd year of the Bachelor's Degree in Engineering
 - President of [AUCOOP](https://aucoop.upc.edu), a UPC students organization doing IT-related cooperation projects
-- Maintaining [:senegal: hahatay.network](https://hahatay.network), a community network in Senegal with other volunteers
-- Starting a connectivity project in a school in Gochas, [Namibia :namibia:](https://foundawtion.org/archivos/5383)
+- Maintaining [:senegal: hahatay.network](https://hahatay.network), a community network in Senegal with other volunteers as well as a smallschool network in Gochas, [Namibia :namibia:](https://foundawtion.org/archivos/5383)
 - Contributing to [eReuse.org](https://ereuse.org) :recycle: lifecycle management software for refurbished equipment
-- Besides nerdy stuff I really enjoy running, climbing :climbing:, making wine :wine_glass: (200L this year!), and [converting a 2006 van]({{< ref "/posts/2025/camper-history" >}}) for summer travels :bus:
+
+This year I also wanted to take my hobbies more seriously so:
+- I'm learning lots of winemaking and trying to improve it substantially. I'm tracking it at https://vino.sergiogimenez.com
+- I'm running my first half marathon in November in the Basque Country.
+- I'm taking climbing and guitar lessons.
+- And slowly also improving the [2006 van conversion]({{< ref "/posts/2025/camper-history" >}}) for summer travels :bus:
 
 ---
 
