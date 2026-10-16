@@ -41,7 +41,8 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 
 [header]
-  layout = "basic" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
+  layout = "floating" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur, floating
+  mobileMenuStyle = "dropdown" # valid options: fullscreen, dropdown
 
 [footer]
   showMenu = true
@@ -51,7 +52,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showScrollToTop = true
 
 [homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
+  layout = "profile" # valid options: page, profile, hero, card, background, landing, custom
   #homepageImage = "IMAGE.jpg" # used in: hero, and card
   showRecent = true
   showRecentItems = 5
@@ -94,6 +95,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [list]
   showHero = true
+  featureImageHover = true # subtle zoom on card thumbnails on hover
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
