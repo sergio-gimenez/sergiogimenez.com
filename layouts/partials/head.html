@@ -1,5 +1,5 @@
 {{/*
-  Override of Blowfish's partials/head.html — based on v2.106.0.
+  Override of Blowfish's partials/head.html — based on v3.9.0.
   Only deviation from upstream: the <link rel="canonical"> block below honours a
   `canonicalUrl` front-matter param (used for posts cross-posted from other sites).
   When bumping Blowfish, re-copy the theme's head.html and re-apply that one change.
@@ -64,6 +64,9 @@
       <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink ($.Site.Title | emojify) |
       safeHTML
     }}
+  {{ end }}
+  {{ with site.Home.OutputFormats.Get "LLMS" }}
+    <link rel="describedby" href="{{ .RelPermalink }}">
   {{ end }}
 
   {{/* Me */}}
@@ -167,7 +170,9 @@
   {{ end }}
   {{ if not .Site.Params.disableImageZoom | default true }}
     {{ $zoomJS := resources.Get "lib/zoom/zoom.min.umd.js" | resources.Fingerprint $alg }}
-    <script src="{{ $zoomJS.RelPermalink }}" integrity="{{ $zoomJS.Data.Integrity }}"></script>
+    <script defer src="{{ $zoomJS.RelPermalink }}" integrity="{{ $zoomJS.Data.Integrity }}"></script>
+    {{ $zoomInit := resources.Get "js/medium-zoom.js" | resources.Fingerprint $alg }}
+    <script defer src="{{ $zoomInit.RelPermalink }}" integrity="{{ $zoomInit.Data.Integrity }}"></script>
   {{ end }}
   {{ $showReadingProgress := site.Params.article.showReadingProgress | default false }}
   {{ if isset .Params "showreadingprogress" }}
@@ -198,6 +203,7 @@
     {{ $jsResources = $jsResources | append (resources.Get "js/rtl.js") }}
   {{ end }}
   {{ $jsResources = $jsResources | append (resources.Get "js/katex-render.js") }}
+  {{ $jsResources = $jsResources | append (resources.Get "js/menu-a11y.js") }}
   {{ $jsResources = $jsResources | append (resources.Get "js/print-support.js") }}
   {{ $jsResources = $jsResources | append (resources.Get "js/email.js") }}
   {{ if $jsResources }}
